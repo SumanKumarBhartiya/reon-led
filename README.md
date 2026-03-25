@@ -70,15 +70,8 @@ npm run preview
 
 ## ⚙️ Configuration
 
-### 1. Change the GitHub repo name
 
-In `vite.config.ts`, update the `base` to match your GitHub repository name:
-
-```ts
-base: '/your-repo-name/',
-```
-
-### 2. Set up form handling (pick one)
+### 1. Set up form handling (pick one)
 
 **Option A — Formspree (recommended for GitHub Pages)**
 1. Create a free account at [formspree.io](https://formspree.io)
@@ -97,21 +90,6 @@ The `POST /api/enquiry` endpoint should accept the `EnquiryFormData` type from `
 
 **Option C — mailto fallback (no config needed)**
 If neither env var is set, the form opens the user's default email client.
-
----
-
-## 🌐 Deploy to GitHub Pages
-
-### Automatic (recommended)
-1. Push your code to the `main` branch of a GitHub repository
-2. Go to **Settings → Pages → Source** → set to **GitHub Actions**
-3. Every push to `main` will auto-build and deploy via `.github/workflows/deploy.yml`
-
-### Manual
-```bash
-npm run deploy
-```
-(Uses `gh-pages` package — requires `homepage` in `package.json` if using this method)
 
 ---
 
