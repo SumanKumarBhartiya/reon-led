@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Source Sans 3', sans-serif;
+    color: #1B2A4A;
+    background-color: #ffffff;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-brand-gold text-white px-6 py-3 font-body font-semibold tracking-wide transition-all duration-300 hover:bg-brand-gold-dark hover:shadow-lg active:scale-95;
+  }
+
+  .btn-outline {
+    @apply border-2 border-brand-gold text-brand-gold px-6 py-3 font-body font-semibold tracking-wide transition-all duration-300 hover:bg-brand-gold hover:text-white active:scale-95;
+  }
+
+  .section-heading {
+    @apply font-heading text-3xl md:text-4xl font-bold text-brand-navy;
+  }
+
+  .section-subheading {
+    @apply font-body text-gray-500 text-lg mt-3 max-w-2xl mx-auto;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-xl;
+  }
+
+  .gold-divider {
+    @apply w-16 h-1 bg-brand-gold mx-auto mt-4 mb-2;
+  }
+}
+
+/* Animated underline for nav links */
+.nav-link {
+  position: relative;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #B87333;
+  transition: width 0.3s ease;
+}
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* Stagger animation helpers */
+.animate-delay-100 { animation-delay: 100ms; }
+.animate-delay-200 { animation-delay: 200ms; }
+.animate-delay-300 { animation-delay: 300ms; }
+.animate-delay-400 { animation-delay: 400ms; }
+.animate-delay-500 { animation-delay: 500ms; }
+
+/* Opacity-0 default for animated elements */
+.animate-fade-up,
+.animate-fade-in,
+.animate-slide-in-left {
+  opacity: 0;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #f1f1f1; }
+::-webkit-scrollbar-thumb { background: #B87333; border-radius: 3px; }
