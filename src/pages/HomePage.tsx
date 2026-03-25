@@ -58,7 +58,7 @@ export default function HomePage() {
               <div className="absolute inset-0 rounded-full border-2 border-brand-gold/30 animate-ping" style={{ animationDuration: '3s' }} />
               <div className="absolute inset-4 rounded-full border border-brand-gold/20" />
               <div className="absolute inset-0 flex items-center justify-center">
-                <img src="logo.png" alt="Reon LED" className="w-56 h-56 object-contain invert opacity-90 animate-float" />
+                <img src="led.png" alt="Reon LED" className="rounded w-40 h-40 object-contain animate-float" />
               </div>
             </div>
           </div>
