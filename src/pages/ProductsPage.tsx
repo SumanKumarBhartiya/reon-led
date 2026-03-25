@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { PRODUCTS } from '../data'
 import type { ProductCategory } from '../types'
-import { SectionHeader } from '../components/ui'
+// import { SectionHeader } from '../components/ui'
 import ProductCard from '../components/ui/ProductCard'
 
 const ALL_CATEGORIES: (ProductCategory | 'All')[] = [

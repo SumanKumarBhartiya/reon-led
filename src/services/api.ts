@@ -4,7 +4,9 @@ import type { EnquiryFormData, ApiResponse } from '../types'
 // When you're ready for a real backend, set VITE_API_URL in your .env file.
 // For GitHub Pages (static), the form falls back to a mailto link or a
 // free service like Formspree / EmailJS.
-const API_BASE = import.meta.env.VITE_API_URL ?? ''
+const API_BASE = ""
+// const API_BASE = import.meta.env.VITE_API_URL ?? ''
+
 
 // ─── Enquiry ──────────────────────────────────────────────────────────────────
 export async function submitEnquiry(
@@ -21,7 +23,8 @@ export async function submitEnquiry(
   }
 
   // --- Formspree fallback (set VITE_FORMSPREE_ID in .env) ---
-  const formspreeId = import.meta.env.VITE_FORMSPREE_ID
+  const formspreeId = ""
+  // const formspreeId = import.meta.env.VITE_FORMSPREE_ID
   if (formspreeId) {
     const res = await fetch(`https://formspree.io/f/${formspreeId}`, {
       method: 'POST',

@@ -1,4 +1,4 @@
-import { SectionHeader } from '../components/ui'
+// import { SectionHeader } from '../components/ui'
 
 const POSTS = [
   {
