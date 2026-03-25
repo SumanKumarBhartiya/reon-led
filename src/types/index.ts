@@ -11,7 +11,7 @@ export const COMPANY = {
     city: 'Hosur',
     state: 'Tamil Nadu',
     pincode: '635 109',
-    full: 'No 25/1 Appavu Nagar Extension, Opp. Chennish Mahal, Thalli Road, Hosur – 635 109',
+    full: 'No 25/1 Appavu Nagar Extension, Opp. Chennish Mahal, Thalli Road, Hosur - 635 109',
   },
   phones: ['9740094003', '9629927649'],
   email: 'reon.indu@gmail.com',
