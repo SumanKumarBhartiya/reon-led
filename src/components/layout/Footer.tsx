@@ -13,7 +13,7 @@ export default function Footer() {
         {/* Brand column */}
         <div>
           <Link to="/" className="flex items-center gap-3 mb-4">
-            <img src="logo.png" alt="Reon LED" className="h-16 w-auto invert" />
+            <img src="/logo.png" alt="Reon LED" className="h-16 w-auto invert" />
             <div>
               <p className="font-heading font-bold text-white text-base leading-tight">REON INDUSTRIES</p>
               <p className="font-body text-brand-gold-light text-xs tracking-widest uppercase">Pvt. Ltd.</p>
@@ -61,9 +61,9 @@ export default function Footer() {
               'Street Light Housing',
               'Flood Light Housing',
               'High Bay Light Housing',
-              'Well Glass Light Housing',
-              'Finish Goods',
-              'PCB',
+              // 'Well Glass Light Housing',
+              // 'Finish Goods',
+              // 'PCB',
             ].map((p) => (
               <li key={p}>
                 <Link
