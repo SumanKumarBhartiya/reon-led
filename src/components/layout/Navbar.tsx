@@ -53,7 +53,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group">
             <img
-              src="/logo.png"
+              src="logo.png"
               alt="Reon LED Logo"
               className="h-16 w-auto transition-transform group-hover:scale-105"
             />
