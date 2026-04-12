@@ -5,101 +5,248 @@ export const NAV_ITEMS: NavItem[] = [
   {
     label: 'Products',
     path: '/products',
-    children: [
-      { label: 'Street Light Housing', path: '/products/street-light-housing' },
-      { label: 'Flood Light Housing', path: '/products/flood-light-housing' },
-      { label: 'High Bay Light Housing', path: '/products/high-bay-light-housing' },
-      { label: 'Well Glass Light Housing', path: '/products/well-glass-light-housing' },
-      { label: 'Finish Goods', path: '/products/finish-goods' },
-      { label: 'PCB', path: '/products/pcb' },
-    ],
+    // children: [
+    //   { label: 'Street Light Housing', path: '/products/street-light-housing' },
+    //   { label: 'Flood Light Housing', path: '/products/flood-light-housing' },
+    //   { label: 'High Bay Light Housing', path: '/products/high-bay-light-housing' },
+    //   { label: 'Well Glass Light Housing', path: '/products/well-glass-light-housing' },
+    //   { label: 'Finish Goods', path: '/products/finish-goods' },
+    //   { label: 'PCB', path: '/products/pcb' },
+    // ],
   },
   { label: 'About Us', path: '/about' },
-  // { label: 'Career', path: '/career' },
-  { label: 'Blog', path: '/blog' },
+  // { label: 'Blog', path: '/blog' },
   { label: 'Contact', path: '/contact' },
 ]
 
 export const PRODUCTS: Product[] = [
   {
-    id: 'slh-24w',
-    name: '24W Street Light Glass Housing',
+    id: '1',
+    name: '24 W Eco Lens Street Light',
     category: 'Street Light Housing',
     wattage: '24W',
+    image: "./products/rnipl-1100.jpeg",
     description: 'Durable die-cast aluminium housing designed for 24W street light applications with IP66 rating.',
     features: ['Die-cast aluminium', 'IP66 rated', 'Anti-corrosion coating', 'Easy PCB mounting'],
     enquiryEnabled: true,
+    specs: [
+      {
+        label: "Code",
+        value: "RNIPL-1100"
+      }
+    ],
+    document: "./document/RNIPL-1100.pdf",
   },
   {
-    id: 'slh-40w',
-    name: '40W Street Light Frame Housing',
+    id: '2',
+    name: '36 W Eco Lens Street Light',
     category: 'Street Light Housing',
-    wattage: '40W',
-    description: 'Lightweight frame-type street light housing optimised for 40W LED modules.',
+    wattage: '36W',
+    image: "./products/rnipl-1101.jpeg",
+    description: 'Energy-efficient LED street lighting designed for optimal visibility and safety on roadways and pathways.',
     features: ['Aluminium frame', 'Thermal management fins', 'Stainless hardware', 'IK08 impact resistant'],
     enquiryEnabled: true,
+    specs: [
+      {
+        label: "Code",
+        value: "RNIPL-1101"
+      }
+    ],
+    document: "./document/RNIPL-1101.pdf",
   },
   {
-    id: 'flh-50w',
-    name: '50W Flood Light GM Housing',
+    id: '3',
+    name: '50 W Pro Lens Flood Light',
     category: 'Flood Light Housing',
     wattage: '50W',
+    image: "./products/rnipl-0071.jpeg",
     description: 'Heavy-duty flood light housing with adjustable bracket for industrial & commercial use.',
     features: ['High-pressure die cast', 'IP65 rated', 'Adjustable tilt bracket', 'Wide beam compatibility'],
     enquiryEnabled: true,
+    specs: [
+      {
+        label: "Code",
+        value: "RNIPL-0071"
+      }
+    ],
+    document: "./document/RNIPL-0071.pdf",
   },
   {
-    id: 'flh-100w',
-    name: '100W Flood Light Down Choke Eco Housing',
+    id: '4',
+    name: '100 W Pro Lens Flood Light',
     category: 'Flood Light Housing',
     wattage: '100W',
+    image: "./products/rnipl-0072.jpeg",
     description: 'Eco series down-choke flood light housing for 100W drivers with integrated heat sink.',
     features: ['Eco design', 'Integrated heatsink', 'IP65 rated', 'Driver cavity included'],
     enquiryEnabled: true,
+    specs: [
+      {
+        label: "Code",
+        value: "RNIPL-0072"
+      }
+    ],
+    document: "./document/RNIPL-0072.pdf",
   },
   {
-    id: 'hbh-50w',
-    name: '50-100W High Bay Glass Housing',
+    id: '7',
+    name: '50-60 W SpotLens High Bay',
     category: 'High Bay Light Housing',
-    wattage: '50–100W',
+    wattage: '50-60W',
+    image: "./products/rnipl-0231.jpeg",
     description: 'Industrial-grade high bay glass housing for warehouses and factory ceilings.',
     features: ['Toughened glass diffuser', 'IP65 rated', 'Hanging / surface mount', 'Corrosion resistant'],
     enquiryEnabled: true,
+    specs: [
+      {
+        label: "Code",
+        value: "RNIPL-0231"
+      }
+    ],
+    document: "./document/RNIPL-0231.pdf",
   },
   {
-    id: 'hbh-dome',
-    name: '50-100W High Bay Dome Housing',
+    id: '8',
+    name: '100 W Spot Lens High Bay',
     category: 'High Bay Light Housing',
-    wattage: '50–100W',
+    wattage: '100W',
+    image: "./products/rnipl-0232.jpeg",
     description: 'Classic dome-style high bay housing delivering uniform illumination for large spaces.',
     features: ['Polycarbonate dome', 'IP65 rated', 'Excellent heat dissipation', 'Hook & chain mount'],
     enquiryEnabled: true,
+    specs: [
+      {
+        label: "Code",
+        value: "RNIPL-0232"
+      }
+    ],
+    document: "./document/RNIPL-0232.pdf",
   },
   {
-    id: 'wgh-40w-spot',
-    name: '40W Well Glass Spot Lens',
-    category: 'Well Glass Light Housing',
-    wattage: '40W',
-    description: 'Spot lens well-glass luminaire for outdoor post-top and bollard applications.',
-    features: ['Tempered glass lens', 'IP67 rated', 'Post-top compatible', 'UV stabilised'],
+    id: '5',
+    name: '200 W Pro Lens Flood Light',
+    category: 'Flood Light Housing',
+    wattage: '200W',
+    image: "./products/rnipl-0073.jpeg",
+    description: 'Heavy-duty flood light housing with adjustable bracket for industrial & commercial use.',
+    features: ['Eco design', 'Integrated heatsink', 'IP65 rated', 'Driver cavity included'],
     enquiryEnabled: true,
+    specs: [
+      {
+        label: "Code",
+        value: "RNIPL-0073"
+      }
+    ],
+    document: "./document/RNIPL-0073.pdf",
   },
   {
-    id: 'pcb-street',
-    name: 'Street Light PCB',
-    category: 'PCB',
-    wattage: 'Various',
-    description: 'Custom LED PCBs manufactured in-house for street light applications, available in multiple wattages.',
-    features: ['High-CRI LEDs', 'MCPCB substrate', 'Custom wattage', 'RoHS compliant'],
+    id: '6',
+    name: '130-150 W Pro Lens Flood Light',
+    category: 'Flood Light Housing',
+    wattage: '130-150W',
+    image: "./products/rnipl-0074.jpeg",
+    description: 'Heavy-duty flood light housing with adjustable bracket for industrial & commercial use.',
+    features: ['Eco design', 'Integrated heatsink', 'IP65 rated', 'Driver cavity included'],
     enquiryEnabled: true,
+    specs: [
+      {
+        label: "Code",
+        value: "RNIPL-0074"
+      }
+    ],
+    document: "./document/RNIPL-0074.pdf",
+  },
+  {
+    id: '9',
+    name: '100 W High Bay Spot Lens',
+    category: 'High Bay Light Housing',
+    wattage: '100W',
+    image: "./products/rnipl-0233.jpeg",
+    description: 'Classic dome-style high bay housing delivering uniform illumination for large spaces.',
+    features: ['Polycarbonate dome', 'IP65 rated', 'Excellent heat dissipation', 'Hook & chain mount'],
+    enquiryEnabled: true,
+    specs: [
+      {
+        label: "Code",
+        value: "RNIPL-0233"
+      }
+    ],
+    document: "./document/RNIPL-0233.pdf",
+  },
+  {
+    id: '10',
+    name: '150 W High Bay Spot Lens',
+    category: 'High Bay Light Housing',
+    wattage: '150W',
+    image: "./products/rnipl-0234.jpeg",
+    description: 'Classic dome-style high bay housing delivering uniform illumination for large spaces.',
+    features: ['Polycarbonate dome', 'IP65 rated', 'Excellent heat dissipation', 'Hook & chain mount'],
+    enquiryEnabled: true,
+    specs: [
+      {
+        label: "Code",
+        value: "RNIPL-0234"
+      }
+    ],
+    document: "./document/RNIPL-0234.pdf",
+  },
+  {
+    id: '11',
+    name: '200 W High Bay Spot Lens Pro',
+    category: 'High Bay Light Housing',
+    wattage: '200W',
+    image: "./products/rnipl-0235.jpeg",
+    description: 'Classic dome-style high bay housing delivering uniform illumination for large spaces.',
+    features: ['Polycarbonate dome', 'IP65 rated', 'Excellent heat dissipation', 'Hook & chain mount'],
+    enquiryEnabled: true,
+    specs: [
+      {
+        label: "Code",
+        value: "RNIPL-0235"
+      }
+    ],
+    document: "./document/RNIPL-0235.pdf",
+  },
+  {
+    id: '12',
+    name: '100 W High Bay Eco Spiral',
+    category: 'High Bay Light Housing',
+    wattage: '100W',
+    image: "./products/rnipl-02551.jpeg",
+    description: 'Classic dome-style high bay housing delivering uniform illumination for large spaces.',
+    features: ['Polycarbonate dome', 'IP65 rated', 'Excellent heat dissipation', 'Hook & chain mount'],
+    enquiryEnabled: true,
+    specs: [
+      {
+        label: "Code",
+        value: "RNIPL-02551"
+      }
+    ],
+    document: "./document/RNIPL-02551.pdf",
+  },
+  {
+    id: '13',
+    name: '150 W High Bay Eco Spiral',
+    category: 'High Bay Light Housing',
+    wattage: '150W',
+    image: "./products/rnipl-02552.jpeg",
+    description: 'Classic dome-style high bay housing delivering uniform illumination for large spaces.',
+    features: ['Polycarbonate dome', 'IP65 rated', 'Excellent heat dissipation', 'Hook & chain mount'],
+    enquiryEnabled: true,
+    specs: [
+      {
+        label: "Code",
+        value: "RNIPL-02552"
+      }
+    ],
+    document: "./document/RNIPL-02552.pdf",
   },
 ]
 
 export const STATS = [
-  { value: '500+', label: 'Products Delivered' },
-  { value: '50+', label: 'Happy Clients' },
-  { value: '6+', label: 'Product Lines' },
-  { value: '5+', label: 'Years Experience' },
+  { value: '1000+', label: 'Products Delivered' },
+  { value: '350+', label: 'Happy Clients' },
+  { value: '7+', label: 'Years Experience' },
 ]
 
 export const WHY_CHOOSE_US = [

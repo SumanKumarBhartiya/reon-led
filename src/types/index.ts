@@ -21,6 +21,12 @@ export const COMPANY = {
 } as const
 
 // ─── Product Types ─────────────────────────────────────────────────────────────
+
+export interface Specification {
+  label: string
+  value: string
+}
+
 export interface Product {
   id: string
   name: string
@@ -29,16 +35,15 @@ export interface Product {
   description: string
   features: string[]
   image?: string
-  enquiryEnabled: boolean
+  enquiryEnabled: boolean,
+  specs: Specification[],
+  document: string,
 }
 
 export type ProductCategory =
   | 'Street Light Housing'
   | 'Flood Light Housing'
   | 'High Bay Light Housing'
-  | 'Well Glass Light Housing'
-  | 'Finish Goods'
-  | 'PCB'
 
 // ─── Navigation Types ──────────────────────────────────────────────────────────
 export interface NavItem {

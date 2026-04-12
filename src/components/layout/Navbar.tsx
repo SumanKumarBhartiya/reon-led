@@ -27,12 +27,12 @@ export default function Navbar() {
       className={clsx(
         'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
         scrolled
-          ? 'bg-white shadow-md py-2'
-          : 'bg-white/95 backdrop-blur-sm py-3'
+          ? 'bg-white shadow-md py-1'
+          : 'bg-white/95 backdrop-blur-sm py-1'
       )}
     >
       {/* Top bar */}
-      <div className="bg-brand-navy text-white text-xs py-1.5 hidden md:block">
+      <div className="bg-brand-navy text-white text-xs py-1 hidden md:block">
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
           <span className="font-body">{COMPANY.address.full}</span>
           <div className="flex items-center gap-4">

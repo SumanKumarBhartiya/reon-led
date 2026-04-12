@@ -76,7 +76,7 @@ export default function HomePage() {
 
       {/* ── Stats ───────────────────────────────────────────────────────────── */}
       <section id="stats" className="bg-brand-gold py-14">
-        <div className="max-w-7xl mx-auto px-4 grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+        <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-3 gap-8 text-center">
           {STATS.map((s) => (
             <div key={s.label}>
               <p className="font-heading text-white text-4xl font-bold">{s.value}</p>
@@ -121,7 +121,7 @@ export default function HomePage() {
             {WHY_CHOOSE_US.map((item, i) => (
               <div
                 key={item.title}
-                className="p-6 border border-gray-100 hover:border-brand-gold/40 hover:shadow-lg transition-all duration-300 group"
+                className="p-6 border border-gray-300 hover:border-brand-gold/40 hover:shadow-lg transition-all duration-300 group"
                 style={{ animationDelay: `${i * 100}ms` }}
               >
                 <div className="w-14 h-14 bg-brand-gold/10 flex items-center justify-center text-2xl mb-4 group-hover:bg-brand-gold/20 transition-colors">
