@@ -17,7 +17,7 @@ export const COMPANY = {
   email: 'reon.indu@gmail.com',
   workingHours: 'Mon – Sat: 9:00 AM – 6:00 PM',
   founded: '2020',
-  gstin: '', // Add when available
+  gstin: '', // Add when available TODO
 } as const
 
 // ─── Product Types ─────────────────────────────────────────────────────────────
