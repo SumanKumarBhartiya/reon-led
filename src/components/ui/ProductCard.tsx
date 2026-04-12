@@ -8,41 +8,13 @@ interface ProductCardProps {
   showEnquiry?: boolean
 }
 
-// Placeholder image by category
-const CATEGORY_COLORS: Record<string, string> = {
-  'Street Light Housing': 'from-blue-900 to-brand-navy',
-  'Flood Light Housing': 'from-amber-900 to-brand-navy',
-  'High Bay Light Housing': 'from-emerald-900 to-brand-navy',
-  'Well Glass Light Housing': 'from-purple-900 to-brand-navy',
-  'Finish Goods': 'from-rose-900 to-brand-navy',
-  PCB: 'from-cyan-900 to-brand-navy',
-}
-
-const CATEGORY_ICONS: Record<string, string> = {
-  'Street Light Housing': '🔦',
-  'Flood Light Housing': '💡',
-  'High Bay Light Housing': '🏭',
-  'Well Glass Light Housing': '🌟',
-  'Finish Goods': '✅',
-  PCB: '⚙️',
-}
-
 export default function ProductCard({ product, showEnquiry = true }: ProductCardProps) {
-  const gradient = CATEGORY_COLORS[product.category] ?? 'from-gray-800 to-brand-navy'
-  const icon = CATEGORY_ICONS[product.category] ?? '💡'
 
   return (
     <div className="bg-white border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col">
       {/* Image placeholder */}
-      <div className={`bg-gradient-to-br ${gradient} h-52 flex items-center justify-center relative overflow-hidden`}>
-        <div className="text-6xl opacity-60">{icon}</div>
-        <div className="absolute inset-0 bg-black/20" />
-        <div className="absolute bottom-3 left-3">
-          <span className="bg-brand-gold text-white text-xs font-body font-bold px-3 py-1">
-            {product.wattage}
-          </span>
-        </div>
-      </div>
+      
+      <img src={product.image} />
 
       {/* Content */}
       <div className="p-5 flex flex-col flex-1">
@@ -66,7 +38,7 @@ export default function ProductCard({ product, showEnquiry = true }: ProductCard
 
         {/* Actions */}
         <div className="flex gap-2 mt-auto">
-          <Link to={`/products/${product.id}`} className="flex-1">
+          <Link to={`/products/detail/${product.id}`} state={{ product }} className='flex-1'>
             <Button variant="outline" size="sm" className="w-full">
               View Details
             </Button>

@@ -61,7 +61,7 @@ export default function AboutPage() {
 
       {/* Stats */}
       <section className="bg-brand-gold py-14">
-        <div className="max-w-7xl mx-auto px-4 grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+        <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-3 gap-8 text-center">
           {STATS.map((s) => (
             <div key={s.label}>
               <p className="font-heading text-white text-4xl font-bold">{s.value}</p>
@@ -100,7 +100,7 @@ export default function AboutPage() {
           <SectionHeader badge="Strengths" title="What Sets Us Apart" />
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {WHY_CHOOSE_US.map((item) => (
-              <div key={item.title} className="p-6 border border-gray-100 hover:border-brand-gold/50 hover:shadow-md transition-all">
+              <div key={item.title} className="p-6 border border-gray-500 hover:border-brand-gold/50 hover:shadow-md transition-all">
                 <div className="text-3xl mb-4">{item.icon}</div>
                 <h4 className="font-heading text-brand-navy font-semibold text-lg mb-2">{item.title}</h4>
                 <p className="font-body text-gray-500 text-sm">{item.description}</p>

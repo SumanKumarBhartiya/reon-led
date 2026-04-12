@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { PRODUCTS } from '../data'
 import type { ProductCategory } from '../types'
-// import { SectionHeader } from '../components/ui'
 import ProductCard from '../components/ui/ProductCard'
 
 const ALL_CATEGORIES: (ProductCategory | 'All')[] = [
@@ -9,9 +8,6 @@ const ALL_CATEGORIES: (ProductCategory | 'All')[] = [
   'Street Light Housing',
   'Flood Light Housing',
   'High Bay Light Housing',
-  'Well Glass Light Housing',
-  'Finish Goods',
-  'PCB',
 ]
 
 export default function ProductsPage() {
@@ -24,7 +20,7 @@ export default function ProductsPage() {
   return (
     <div className="min-h-screen">
       {/* Page header */}
-      <div className="bg-brand-navy py-16 relative overflow-hidden">
+      <div className="bg-brand-navy py-10 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10"
           style={{
             backgroundImage: `radial-gradient(circle at 2px 2px, #B87333 1px, transparent 0)`,
@@ -34,7 +30,7 @@ export default function ProductsPage() {
         <div className="max-w-7xl mx-auto px-4 relative z-10">
           <p className="font-body text-brand-gold text-sm tracking-widest uppercase mb-2">Our Range</p>
           <h1 className="font-heading text-white text-4xl md:text-5xl font-bold">Products</h1>
-          <p className="font-body text-gray-300 mt-3 text-lg max-w-xl">
+          <p className="font-body text-gray-300 mt-3 text-lg max-w-2xl">
             Precision-manufactured LED housings, finish goods and PCBs for every application.
           </p>
         </div>

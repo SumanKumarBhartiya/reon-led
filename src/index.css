@@ -11,6 +11,8 @@
     font-family: 'Source Sans 3', sans-serif;
     color: #1B2A4A;
     background-color: #ffffff;
+    padding-left: 2px;
+    padding-right: 2px;
   }
 
   h1, h2, h3, h4 {
