@@ -49,7 +49,7 @@ export default function AboutPage() {
 
           {/* Image placeholder / brand panel */}
           <div className="bg-brand-navy rounded-sm p-12 flex flex-col items-center justify-center text-center gap-6">
-            <img src="logo.png" alt="Reon LED" className="h-18 w-auto invert" />
+            <img src="logo.png" alt="Reon LED" className="rounded-lg h-18 w-auto" />
             <div>
               <p className="font-heading text-white text-2xl font-bold">REON INDUSTRIES</p>
               <p className="font-body text-brand-gold-light text-sm tracking-widest uppercase mt-1">Pvt. Ltd.</p>

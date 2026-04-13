@@ -21,7 +21,7 @@ export default function ProductCard({ product }: ProductCardProps) {
         {/* Content */}
         <div className="p-5 flex flex-col flex-1">
           <Badge className="self-start mb-2 text-[10px]">{product.category}</Badge>
-          <h3 className="font-heading text-brand-navy font-semibold text-lg leading-snug mb-2">
+          <h3 className="font-semibold text-md leading-snug mb-2" style={{fontFamily: 'sans-serif'}}>
             {product.name}
           </h3>
           {/* <p className="font-body text-gray-500 text-sm leading-relaxed mb-4 flex-1">

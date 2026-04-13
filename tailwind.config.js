@@ -17,7 +17,7 @@ export default {
         },
       },
       fontFamily: {
-        heading: ['"Playfair Display"', 'Georgia', 'serif'],
+        // heading: ['"Playfair Display"', 'Georgia', 'serif'],
         body: ['"Source Sans 3"', 'sans-serif'],
         mono: ['"JetBrains Mono"', 'monospace'],
       },
