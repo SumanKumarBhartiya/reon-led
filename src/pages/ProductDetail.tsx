@@ -45,7 +45,7 @@ export default function ProductDetail() {
                     <div className='mt-8 text-xl underline bold'>
                         <a
                             href={product.document}
-                            download
+                            // download
                             className="mt-8 inline-flex items-center gap-2 text-lg font-semibold text-blue-600 underline hover:text-blue-800"
                         >
                             Download Datasheet
