@@ -5,9 +5,9 @@ import ProductCard from '../components/ui/ProductCard'
 
 const ALL_CATEGORIES: (ProductCategory | 'All')[] = [
   'All',
+  'High Bay Light Housing',
   'Street Light Housing',
   'Flood Light Housing',
-  'High Bay Light Housing',
 ]
 
 export default function ProductsPage() {

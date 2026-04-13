@@ -7,7 +7,7 @@ import ProductCard from '../components/ui/ProductCard'
 import EnquiryForm from '../components/ui/EnquiryForm'
 
 export default function HomePage() {
-  const featuredProducts = PRODUCTS.slice(0, 6)
+  const featuredProducts = PRODUCTS.slice(0, 8)
 
   return (
     <>
@@ -94,7 +94,7 @@ export default function HomePage() {
             title="Premium LED Lighting Solutions"
             subtitle="From street light housings to finish goods — precision-engineered for performance and longevity."
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-6">
             {featuredProducts.map((product) => (
               <ProductCard key={product.id} product={product} />
             ))}
