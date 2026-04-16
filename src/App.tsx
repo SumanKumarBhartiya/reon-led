@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import Layout from './components/layout/Layout'
 import HomePage from './pages/HomePage'
 import ProductsPage from './pages/ProductsPage'
@@ -9,14 +9,14 @@ import BlogPage from './pages/BlogPage'
 import NotFoundPage from './pages/NotFoundPage'
 import ProductDetail from './pages/ProductDetail'
 
-// NOTE: We use BrowserRouter (URL#hash routing) so that GitHub Pages
+// NOTE: We use HashRouter (URL#hash routing) so that GitHub Pages
 // can serve any "route" without needing server-side redirects.
 // When you move to a real backend / hosting with rewrite rules,
-// swap BrowserRouter → BrowserRouter and remove the `base` hash.
+// swap HashRouter → HashRouter and remove the `base` hash.
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
@@ -30,6 +30,6 @@ export default function App() {
           <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }

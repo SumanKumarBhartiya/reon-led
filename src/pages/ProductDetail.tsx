@@ -13,7 +13,7 @@ export default function ProductDetail() {
     </div>)
 
     return (
-        <div className="min-h-screen mt-4">
+        <div className="min-h-screen">
             <div className="flex gap-8 px-8">
                 {/* Image */}
                 <div className="w-1/2">
@@ -51,7 +51,7 @@ export default function ProductDetail() {
                             Download Datasheet
                         </a>
                     </div>
-                    <div className="mt-6">
+                    <div className="my-6">
                         <h2 className="text-sm font-bold text-gray-800 uppercase mb-3">
                             Key Features
                         </h2>

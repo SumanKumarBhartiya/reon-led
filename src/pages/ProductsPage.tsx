@@ -1,7 +1,8 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { PRODUCTS } from '../data'
 import type { ProductCategory } from '../types'
 import ProductCard from '../components/ui/ProductCard'
+import { useParams } from 'react-router-dom'
 
 const ALL_CATEGORIES: (ProductCategory | 'All')[] = [
   'All',
@@ -13,9 +14,28 @@ const ALL_CATEGORIES: (ProductCategory | 'All')[] = [
 export default function ProductsPage() {
   const [active, setActive] = useState<ProductCategory | 'All'>('All')
 
-  const filtered = active === 'All'
-    ? PRODUCTS
-    : PRODUCTS.filter((p) => p.category === active)
+  const { category } = useParams<{ category?: string }>();
+
+  useEffect(() => {
+    if (!category) return;
+
+    const formattedCategory = category
+      .split('-')
+      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(' ');
+
+    if (ALL_CATEGORIES.includes(formattedCategory as ProductCategory)) {
+      setActive(formattedCategory as ProductCategory);
+    } else {
+      setActive('All');
+    }
+  }, [category]);
+
+  const filtered =
+    active === 'All'
+      ? PRODUCTS
+      : PRODUCTS.filter((p) => p.category === active);
+
 
   return (
     <div className="min-h-screen">
@@ -43,11 +63,10 @@ export default function ProductsPage() {
             <button
               key={cat}
               onClick={() => setActive(cat)}
-              className={`px-5 py-2 font-body text-sm font-semibold transition-all duration-200 border ${
-                active === cat
-                  ? 'bg-brand-gold text-white border-brand-gold'
-                  : 'bg-white text-brand-navy border-gray-200 hover:border-brand-gold hover:text-brand-gold'
-              }`}
+              className={`px-5 py-2 font-body text-sm font-semibold transition-all duration-200 border ${active === cat
+                ? 'bg-brand-gold text-white border-brand-gold'
+                : 'bg-white text-brand-navy border-gray-200 hover:border-brand-gold hover:text-brand-gold'
+                }`}
             >
               {cat}
             </button>

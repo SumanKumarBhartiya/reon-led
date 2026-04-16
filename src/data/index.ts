@@ -30,10 +30,23 @@ export const PRODUCTS: Product[] = [
     features: ['Toughened glass diffuser', 'IP65 rated', 'Hanging / surface mount', 'Corrosion resistant'],
     enquiryEnabled: true,
     specs: [
-      {
-        label: "Code",
-        value: "RNIPL-0231"
-      }
+      { label: "Code", value: "RNIPL-0231" },
+      { label: "Power", value: "40 WATT" },
+      { label: "Colour Temp.", value: "3000 K,6000 K" },
+      { label: "Power Factor", value: "> 0.95" },
+      { label: "Lumens/Watt", value: ">100LM/WATT" },
+      { label: "Dimension", value: "Ø 146 X 89 mm" },
+      { label: "IP Rating", value: "IP66" },
+      { label: "Warranty", value: "2 YEAR" },
+      { label: "Body WT", value: "215 gm" },
+      { label: "Lens WT", value: "51 gm" },
+      { label: "Driver Box WT", value: "185 gm" },
+      // { label: "Driver WT", value: "N/A" },
+      // { label: "PCB WT", value: "N/A" },
+      { label: "PCB Size", value: "Ø 113 mm" },
+      { label: "Driver Area", value: "Ø 100 X 40 mm" },
+      { label: "Overall Dim", value: "Ø 146 X 89 mm" },
+      { label: "Gross WT", value: "481 gm" }
     ],
     document: "./document/RNIPL-0231.pdf",
   },
@@ -47,10 +60,24 @@ export const PRODUCTS: Product[] = [
     features: ['Polycarbonate dome', 'IP65 rated', 'Excellent heat dissipation', 'Hook & chain mount'],
     enquiryEnabled: true,
     specs: [
-      {
-        label: "Code",
-        value: "RNIPL-0232"
-      }
+      { label: "Code", value: "RNIPL-0232" },
+      { label: "Power", value: "100 WATT" },
+      { label: "Colour Temp.", value: "3000 K,6000 K" },
+      { label: "Power Factor", value: "> 0.95" },
+      { label: "Lumens/Watt", value: "> 100LM/WATT" },
+      { label: "Dimension", value: "Ø 188 X 105 mm" },
+      { label: "IP Rating", value: "IP66" },
+      { label: "Warranty", value: "2 YEAR" },
+      { label: "Body WT", value: "435 gm" },
+      { label: "Lens WT", value: "100 gm" },
+      { label: "Driver Box WT", value: "315 gm" },
+      { label: "PCB Size", value: "Ø 150 mm" },
+      { label: "Driver Area", value: "Ø 140 X 48 mm" },
+      { label: "Overall Dim", value: "Ø 188 X 105 mm" },
+      // { label: "PCB WT", value: "N/A" },
+      // { label: "Driver WT", value: "N/A" },
+      // { label: "SPD WT", value: "N/A" },
+      // { label: "Gross WT", value: "N/A" }
     ],
     document: "./document/RNIPL-0232.pdf",
   },
@@ -106,10 +133,24 @@ export const PRODUCTS: Product[] = [
     features: ['Polycarbonate dome', 'IP65 rated', 'Excellent heat dissipation', 'Hook & chain mount'],
     enquiryEnabled: true,
     specs: [
-      {
-        label: "Code",
-        value: "RNIPL-0233"
-      }
+      { label: "Code", value: "RNIPL-0233" },
+      { label: "Power", value: "100 WATT" },
+      { label: "Colour Temp.", value: "3000 K,6000 K" },
+      { label: "Power Factor", value: "> 0.95" },
+      { label: "Lumens/Watt", value: ">100LM/WATT" },
+      { label: "Dimension", value: "Ø 254 X 120 mm" },
+      { label: "IP Rating", value: "IP66" },
+      { label: "Warranty", value: "2 YEAR" },
+      { label: "Body WT", value: "650 gm" },
+      { label: "Frame WT", value: "100 gm" },
+      { label: "Driver Box WT", value: "350 gm" },
+      { label: "PCB Size", value: "Ø 150 mm" },
+      { label: "Driver Area", value: "175 X 100 X 60 mm" },
+      { label: "Overall Dim", value: "Ø 254 X 120 mm" },
+      // { label: "Driver WT", value: "N/A" },
+      // { label: "PCB WT", value: "N/A" },
+      // { label: "SPD WT", value: "N/A" },
+      // { label: "Gross WT", value: "N/A" }
     ],
     document: "./document/RNIPL-0233.pdf",
   },
@@ -124,10 +165,24 @@ export const PRODUCTS: Product[] = [
     features: ['Polycarbonate dome', 'IP65 rated', 'Excellent heat dissipation', 'Hook & chain mount'],
     enquiryEnabled: true,
     specs: [
-      {
-        label: "Code",
-        value: "RNIPL-0234"
-      }
+      { label: "Code", value: "RNIPL-0234" },
+      { label: "Power", value: "150 WATT" },
+      { label: "Colour Temp.", value: "3000 K,6000 K" },
+      { label: "Power Factor", value: "> 0.95" },
+      { label: "Lumens/Watt", value: ">100LM/WATT" },
+      { label: "Dimension", value: "Ø 320 X 123 mm" },
+      { label: "IP Rating", value: "IP65" },
+      { label: "Warranty", value: "2 YEAR" },
+      { label: "Body WT", value: "1.095 kg" },
+      { label: "Frame WT", value: "150 gm" },
+      { label: "Driver Box WT", value: "480 gm" },
+      { label: "PCB Size", value: "Ø 192 mm" },
+      { label: "Driver Area", value: "220 X 120 X 60 mm" },
+      { label: "Overall Dim", value: "Ø 320 X 123 mm" },
+      // { label: "Driver WT", value: "N/A" },
+      // { label: "PCB WT", value: "N/A" },
+      // { label: "SPD WT", value: "N/A" },
+      // { label: "Gross WT", value: "N/A" }
     ],
     document: "./document/RNIPL-0234.pdf",
   },
@@ -141,10 +196,24 @@ export const PRODUCTS: Product[] = [
     features: ['Polycarbonate dome', 'IP65 rated', 'Excellent heat dissipation', 'Hook & chain mount'],
     enquiryEnabled: true,
     specs: [
-      {
-        label: "Code",
-        value: "RNIPL-0235"
-      }
+      { label: "Code", value: "RNIPL-0235" },
+      { label: "Power", value: "200 WATT" },
+      { label: "Colour Temp.", value: "3000 K,6000 K" },
+      { label: "Power Factor", value: "> 0.95" },
+      { label: "Lumens/Watt", value: "> 100LM/WATT" },
+      { label: "Dimension", value: "Ø 340 X 131 mm" },
+      { label: "IP Rating", value: "IP65" },
+      { label: "Warranty", value: "2 YEAR" },
+      { label: "Body WT", value: "1.600 kg" },
+      { label: "Frame WT", value: "272 gm" },
+      { label: "Driver Box WT", value: "530 gm" },
+      { label: "PCB Size", value: "Ø 260 mm" },
+      { label: "Driver Area", value: "220 X 110 X 60 mm" },
+      { label: "Overall Dim", value: "Ø 340 X 131 mm" },
+      // { label: "Driver WT", value: "N/A" },
+      // { label: "PCB WT", value: "N/A" },
+      // { label: "SPD WT", value: "N/A" },
+      { label: "Gross WT", value: "2412 gm" }
     ],
     document: "./document/RNIPL-0235.pdf",
   },
@@ -158,10 +227,24 @@ export const PRODUCTS: Product[] = [
     features: ['Polycarbonate dome', 'IP65 rated', 'Excellent heat dissipation', 'Hook & chain mount'],
     enquiryEnabled: true,
     specs: [
-      {
-        label: "Code",
-        value: "RNIPL-02551"
-      }
+      { label: "Code", value: "RNIPL-02551" },
+      { label: "Power", value: "100 WATT" },
+      { label: "Colour Temp.", value: "3000 K,6000 K" },
+      { label: "Power Factor", value: "> 0.95" },
+      { label: "Lumens/Watt", value: ">100LM/WATT" },
+      { label: "Dimension", value: "Ø 254 X 120 mm" },
+      { label: "IP Rating", value: "IP65" },
+      { label: "Warranty", value: "2 YEAR" },
+      { label: "Body WT", value: "650 gm" },
+      { label: "Frame WT", value: "100 gm" },
+      { label: "Driver Box WT", value: "350 gm" },
+      { label: "PCB Size", value: "Ø 150 mm" },
+      { label: "Driver Area", value: "175 X 100 X 60 mm" },
+      { label: "Overall Dim", value: "Ø 254 X 120 mm" },
+      // { label: "PCB WT", value: "N/A" },
+      // { label: "Driver WT", value: "N/A" },
+      // { label: "SPD WT", value: "N/A" },
+      { label: "Gross WT", value: "1165 gm" }
     ],
     document: "./document/RNIPL-02551.pdf",
   },
@@ -175,10 +258,24 @@ export const PRODUCTS: Product[] = [
     features: ['Polycarbonate dome', 'IP65 rated', 'Excellent heat dissipation', 'Hook & chain mount'],
     enquiryEnabled: true,
     specs: [
-      {
-        label: "Code",
-        value: "RNIPL-02552"
-      }
+      { label: "Code", value: "RNIPL-02552" },
+      { label: "Power", value: "150 WATT" },
+      { label: "Colour Temp.", value: "3000 K,6000 K" },
+      { label: "Power Factor", value: "> 0.95" },
+      { label: "Lumens/Watt", value: ">100LM/WATT" },
+      { label: "Dimension", value: "Ø 320 X 123 mm" },
+      { label: "IP Rating", value: "IP65" },
+      { label: "Warranty", value: "2 YEAR" },
+      { label: "Body WT", value: "1.095 kg" },
+      { label: "Frame WT", value: "150 gm" },
+      { label: "Driver Box WT", value: "480 gm" },
+      { label: "PCB Size", value: "Ø 192 mm" },
+      { label: "Driver Area", value: "220 X 120 X 60 mm" },
+      { label: "Overall Dim", value: "Ø 320 X 123 mm" },
+      // { label: "PCB WT", value: "N/A" },
+      // { label: "Driver WT", value: "N/A" },
+      // { label: "SPD WT", value: "N/A" },
+      { label: "Gross WT", value: "1725 gm" }
     ],
     document: "./document/RNIPL-02552.pdf",
   },
@@ -192,10 +289,22 @@ export const PRODUCTS: Product[] = [
     features: ['High-pressure die cast', 'IP65 rated', 'Adjustable tilt bracket', 'Wide beam compatibility'],
     enquiryEnabled: true,
     specs: [
-      {
-        label: "Code",
-        value: "RNIPL-0071"
-      }
+      { label: "Code", value: "RNIPL-0071" },
+      { label: "Power", value: "50 WATT" },
+      { label: "Colour Temp.", value: "3000 K,6000 K" },
+      { label: "Power Factor", value: "> 0.95" },
+      { label: "Lumens/Watt", value: ">100LM/WATT" },
+      { label: "Dimension", value: "199 X 169 X 36 mm" },
+      { label: "IP Rating", value: "IP65" },
+      { label: "Warranty", value: "2 YEAR" },
+      { label: "Body WT", value: "305 gm" },
+      { label: "Frame WT", value: "95 gm" },
+      { label: "PCB Size", value: "95 X 78 mm" },
+      { label: "Driver Area", value: "115 X 45 X 30 mm" },
+      { label: "Overall Dim", value: "199 X 169 X 36 mm" },
+      // { label: "PCB WT", value: "N/A" },
+      // { label: "Driver WT", value: "N/A" },
+      { label: "Gross WT", value: "540 gm" }
     ],
     document: "./document/RNIPL-0071.pdf",
   },
@@ -209,10 +318,23 @@ export const PRODUCTS: Product[] = [
     features: ['Eco design', 'Integrated heatsink', 'IP65 rated', 'Driver cavity included'],
     enquiryEnabled: true,
     specs: [
-      {
-        label: "Code",
-        value: "RNIPL-0072"
-      }
+      { label: "Code", value: "RNIPL-0072" },
+      { label: "Power", value: "100 WATT" },
+      { label: "Colour Temp.", value: "3000 K,6000 K" },
+      { label: "Power Factor", value: "> 0.95" },
+      { label: "Lumens/Watt", value: ">100LM/WATT" },
+      { label: "Dimension", value: "291 X 262 X 47 mm" },
+      { label: "IP Rating", value: "IP65" },
+      { label: "Warranty", value: "2 YEAR" },
+      { label: "Body WT", value: "560 gm" },
+      { label: "Frame WT", value: "151 gm" },
+      { label: "PCB Size", value: "145 X 120 mm" },
+      { label: "Driver Area", value: "160 X 50 X 36 mm" },
+      { label: "Overall Dim", value: "249 X 217 X 43 mm" },
+      // { label: "PCB WT", value: "N/A" },
+      // { label: "Driver WT", value: "N/A" },
+      // { label: "SPD WT", value: "N/A" },
+      { label: "Gross WT", value: "758 gm" }
     ],
     document: "./document/RNIPL-0072.pdf",
   },
@@ -226,10 +348,23 @@ export const PRODUCTS: Product[] = [
     features: ['Eco design', 'Integrated heatsink', 'IP65 rated', 'Driver cavity included'],
     enquiryEnabled: true,
     specs: [
-      {
-        label: "Code",
-        value: "RNIPL-0073"
-      }
+      { label: "Code", value: "RNIPL-0073" },
+      { label: "Power", value: "200 WATT" },
+      { label: "Colour Temp.", value: "3000 K,6000 K" },
+      { label: "Power Factor", value: "> 0.95" },
+      { label: "Lumens/Watt", value: ">100LM/WATT" },
+      { label: "Dimension", value: "353 X 317 X 52 mm" },
+      { label: "IP Rating", value: "IP65" },
+      { label: "Warranty", value: "2 YEAR" },
+      { label: "Body WT", value: "1.250 kg" },
+      { label: "Frame WT", value: "340 gm" },
+      { label: "PCB Size", value: "210 X 160 mm" },
+      { label: "Driver Area", value: "255 X 85 X 45 mm" },
+      { label: "Overall Dim", value: "353 X 317 X 52 mm" },
+      // { label: "PCB WT", value: "N/A" },
+      // { label: "Driver WT", value: "N/A" },
+      // { label: "SPD WT", value: "N/A" },
+      { label: "Gross WT", value: "1635 gm" }
     ],
     document: "./document/RNIPL-0073.pdf",
   },
@@ -243,10 +378,23 @@ export const PRODUCTS: Product[] = [
     features: ['Eco design', 'Integrated heatsink', 'IP65 rated', 'Driver cavity included'],
     enquiryEnabled: true,
     specs: [
-      {
-        label: "Code",
-        value: "RNIPL-0074"
-      }
+      { label: "Code", value: "RNIPL-0074" },
+      { label: "Power", value: "150 WATT" },
+      { label: "Colour Temp.", value: "3000 K,6000 K" },
+      { label: "Power Factor", value: "> 0.95" },
+      { label: "Lumens/Watt", value: ">100LM/WATT" },
+      { label: "Dimension", value: "353 X 317 X 52 mm" },
+      { label: "IP Rating", value: "IP65" },
+      { label: "Warranty", value: "2 YEAR" },
+      { label: "Body WT", value: "1.250 kg" },
+      { label: "Frame WT", value: "340 gm" },
+      { label: "PCB Size", value: "210 X 160 mm" },
+      { label: "Driver Area", value: "255 X 85 X 45 mm" },
+      { label: "Overall Dim", value: "353 X 317 X 52 mm" },
+      // { label: "PCB WT", value: "N/A" },
+      // { label: "Driver WT", value: "N/A" },
+      // { label: "SPD WT", value: "N/A" },
+      { label: "Gross WT", value: "1635 gm" }
     ],
     document: "./document/RNIPL-0074.pdf",
   },
@@ -260,10 +408,22 @@ export const PRODUCTS: Product[] = [
     features: ['Die-cast aluminium', 'IP66 rated', 'Anti-corrosion coating', 'Easy PCB mounting'],
     enquiryEnabled: true,
     specs: [
-      {
-        label: "Code",
-        value: "RNIPL-1100"
-      }
+      { label: "Code", value: "RNIPL-1100" },
+      { label: "Power", value: "24 WATT" },
+      { label: "Colour Temp.", value: "3000 K,6000 K" },
+      { label: "Power Factor", value: "> 0.95" },
+      { label: "Lumens/Watt", value: ">100LM/WATT" },
+      { label: "Dimension", value: "265 X 108 X 53 mm" },
+      { label: "Pipe Dia", value: "Ø 45 mm" },
+      { label: "IP Rating", value: "IP65" },
+      { label: "Warranty", value: "2 YEAR" },
+      { label: "Body WT", value: "200 gm" },
+      { label: "PCB Size", value: "105 X 60 mm" },
+      { label: "Driver Area", value: "93 X 56 X 41 mm" },
+      { label: "Overall Dim", value: "265 X 108 X 53 mm" },
+      // { label: "PCB WT", value: "N/A" },
+      // { label: "Driver WT", value: "N/A" },
+      { label: "Gross WT", value: "280 gm" }
     ],
     document: "./document/RNIPL-1100.pdf",
   },
@@ -277,10 +437,22 @@ export const PRODUCTS: Product[] = [
     features: ['Aluminium frame', 'Thermal management fins', 'Stainless hardware', 'IK08 impact resistant'],
     enquiryEnabled: true,
     specs: [
-      {
-        label: "Code",
-        value: "RNIPL-1101"
-      }
+      { label: "Code", value: "RNIPL-1101" },
+      { label: "Power", value: "36 WATT" },
+      { label: "Colour Temp.", value: "3000 K,6000 K" },
+      { label: "Power Factor", value: "> 0.95" },
+      { label: "Lumens/Watt", value: ">100LM/WATT" },
+      { label: "Dimension", value: "319 X 126 X 55 mm" },
+      { label: "Pipe Dia", value: "Ø 45 mm" },
+      { label: "IP Rating", value: "IP65" },
+      { label: "Warranty", value: "2 YEAR" },
+      { label: "Body WT", value: "260 gm" },
+      { label: "PCB Size", value: "143 X 86 mm" },
+      { label: "Driver Area", value: "110 X 72 X 43 mm" },
+      { label: "Overall Dim", value: "319 X 126 X 55 mm" },
+      // { label: "PCB WT", value: "N/A" },
+      // { label: "Driver WT", value: "N/A" },
+      { label: "Gross WT", value: "370 gm" }
     ],
     document: "./document/RNIPL-1101.pdf",
   },
@@ -294,10 +466,22 @@ export const PRODUCTS: Product[] = [
     features: ['Aluminium frame', 'Thermal management fins', 'Stainless hardware', 'IK08 impact resistant'],
     enquiryEnabled: true,
     specs: [
-      {
-        label: "Code",
-        value: "RNIPL-1102"
-      }
+      { label: "Code", value: "RNIPL-1102" },
+      { label: "Power", value: "50 WATT" },
+      { label: "Colour Temp.", value: "3000 K,6000 K" },
+      { label: "Power Factor", value: "> 0.95" },
+      { label: "Lumens/Watt", value: ">100LM/WATT" },
+      { label: "Dimension", value: "320 X 147 X 54 mm" },
+      { label: "Pipe Dia", value: "Ø 47 mm" },
+      { label: "IP Rating", value: "IP65" },
+      { label: "Warranty", value: "2 YEAR" },
+      { label: "Body WT", value: "495 gm" },
+      { label: "PCB Size", value: "160 X 115 mm" },
+      { label: "Driver Area", value: "144 X 82 X 44 mm" },
+      { label: "Overall Dim", value: "381 X 164 X 58 mm" },
+      // { label: "PCB WT", value: "N/A" },
+      // { label: "Driver WT", value: "N/A" },
+      { label: "Gross WT", value: "940 gm" }
     ],
     document: "./document/RNIPL-1102.pdf",
   },
