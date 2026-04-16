@@ -12,7 +12,7 @@ import ProductDetail from './pages/ProductDetail'
 // NOTE: We use HashRouter (URL#hash routing) so that GitHub Pages
 // can serve any "route" without needing server-side redirects.
 // When you move to a real backend / hosting with rewrite rules,
-// swap HashRouter → BrowserRouter and remove the `base` hash.
+// swap HashRouter → HashRouter and remove the `base` hash.
 
 export default function App() {
   return (

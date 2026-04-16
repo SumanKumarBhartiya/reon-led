@@ -7,7 +7,7 @@ export default function Footer() {
   const year = new Date().getFullYear()
 
   return (
-    <footer className="bg-brand-navy text-white">
+    <footer className="bg-brand-navy-light text-white">
       {/* Main footer */}
       <div className="max-w-7xl mx-auto px-4 py-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
         {/* Brand column */}
@@ -27,7 +27,7 @@ export default function Footer() {
             {['LinkedIn', 'WhatsApp'].map((s) => (
               <span
                 key={s}
-                className="text-xs font-body border border-gray-600 text-gray-400 px-3 py-1 rounded hover:border-brand-gold hover:text-brand-gold cursor-pointer transition-colors"
+                className="text-xs font-body border border-dark-800 text-gray-300 px-3 py-1 rounded hover:border-brand-gold hover:text-brand-gold cursor-pointer transition-colors"
               >
                 {s}
               </span>
