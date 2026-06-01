@@ -31,7 +31,7 @@ export default function AboutPage() {
             </h2>
             <div className="w-16 h-1 bg-brand-gold mb-6" />
             <p className="font-body text-gray-600 text-base leading-relaxed mb-4">
-              Reon Industries Pvt. Ltd. is a Hosur-based manufacturer of premium LED lighting
+              Reon Led Industries Pvt. Ltd. is a Hosur-based manufacturer of premium LED lighting
               components and finished luminaires. Founded with a vision to bring quality, affordable
               LED solutions to India's growing infrastructure, we serve contractors, distributors,
               and OEM clients across the country.
@@ -51,7 +51,7 @@ export default function AboutPage() {
           <div className="bg-brand-navy rounded-sm p-12 flex flex-col items-center justify-center text-center gap-6">
             <img src="logo.png" alt="Reon LED" className="rounded-lg h-18 w-auto" />
             <div>
-              <p className="font-heading text-white text-2xl font-bold">REON INDUSTRIES</p>
+              <p className="font-heading text-white text-2xl font-bold">REON LED INDUSTRIES</p>
               <p className="font-body text-brand-gold-light text-sm tracking-widest uppercase mt-1">Pvt. Ltd.</p>
             </div>
             <p className="font-body text-gray-400 text-sm italic">"{COMPANY.tagline}"</p>
