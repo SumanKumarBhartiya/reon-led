@@ -1,6 +1,6 @@
 // ─── Company Info ─────────────────────────────────────────────────────────────
 export const COMPANY = {
-  name: 'Reon Industries Pvt. Ltd.',
+  name: 'Reon Led Industries Pvt. Ltd.',
   shortName: 'Reon LED',
   tagline: "Illuminating Tomorrow's World",
   description:
@@ -35,6 +35,8 @@ export interface Product {
   description: string
   features: string[]
   image?: string
+  onImage?: string
+  offImage?: string
   enquiryEnabled: boolean,
   specs: Specification[],
   document: string,

@@ -59,7 +59,7 @@ export default function Navbar() {
             />
             <div className="hidden sm:block">
               <p className="font-heading text-brand-navy font-bold text-lg leading-tight">
-                REON INDUSTRIES
+                REON LED INDUSTRIES
               </p>
               <p className="font-body text-brand-gold text-xs tracking-widest uppercase">
                 Pvt. Ltd.

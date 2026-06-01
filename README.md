@@ -1,6 +1,6 @@
-# Reon Industries Pvt. Ltd. — Website
+# Reon Led Industries Pvt. Ltd. — Website
 
-Official website for **Reon Industries Pvt. Ltd.**, a Hosur-based LED lighting manufacturer.
+Official website for **Reon Led Industries Pvt. Ltd.**, a Hosur-based LED lighting manufacturer.
 
 Built with **React 18 + TypeScript + Vite + Tailwind CSS**.
 
@@ -136,4 +136,4 @@ Edit `src/data/index.ts` — add to the `PRODUCTS` array:
 
 ## 📄 License
 
-© 2025 Reon Industries Pvt. Ltd. All rights reserved.
+© 2025 Reon Led Industries Pvt. Ltd. All rights reserved.
