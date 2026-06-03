@@ -57,14 +57,14 @@ export default function Navbar() {
               alt="Reon LED Logo"
               className="h-16 w-auto transition-transform group-hover:scale-105"
             />
-            <div className="hidden sm:block">
+            {/* <div className="hidden sm:block">
               <p className="font-heading text-brand-navy font-bold text-lg leading-tight">
                 REON LED INDUSTRIES
               </p>
               <p className="font-body text-brand-gold text-xs tracking-widest uppercase">
                 Pvt. Ltd.
               </p>
-            </div>
+            </div> */}
           </Link>
 
           {/* Desktop nav */}
