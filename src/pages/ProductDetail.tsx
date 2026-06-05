@@ -28,14 +28,14 @@ export default function ProductDetail() {
                 {/* Specs table */}
                 <div className="w-1/2">
                     <div className='text-2xl text-gray-800 fond-bold mb-4'>Specifications</div>
-                    <table className="w-full border-collapse border border-gray-300">
+                    <table className="w-600 border-collapse border border-gray-300">
                         <tbody>
                             {product.specs.map((spec) => (
                                 <tr key={spec.label} className="border border-gray-300">
-                                    <td className="px-4 py-3 text-lg font-medium text-gray-700 w-1/2 border border-gray-300">
+                                    <td className="px-2 py-2 text-lg font-medium text-gray-700 w-1/2 border border-gray-300">
                                         {spec.label}
                                     </td>
-                                    <td className="px-4 py-3 text-sm text-gray-600 w-1/2">
+                                    <td className="px-2 py-2 text-sm text-gray-600 w-1/2">
                                         {spec.value}
                                     </td>
                                 </tr>
