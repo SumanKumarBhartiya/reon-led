@@ -61,6 +61,7 @@ export default function Footer() {
               'High Bay Light Housing',
               'Street Light Housing',
               'Flood Light Housing',
+              'Indoor Sports Light Housing',
               // 'Well Glass Light Housing',
               // 'Finish Goods',
               // 'PCB',

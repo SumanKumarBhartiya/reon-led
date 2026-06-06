@@ -9,6 +9,7 @@ const ALL_CATEGORIES: (ProductCategory | 'All')[] = [
   'High Bay Light Housing',
   'Street Light Housing',
   'Flood Light Housing',
+  'Indoor Sports Light Housing',
 ]
 
 export default function ProductsPage() {

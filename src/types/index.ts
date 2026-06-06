@@ -46,6 +46,7 @@ export type ProductCategory =
   | 'Street Light Housing'
   | 'Flood Light Housing'
   | 'High Bay Light Housing'
+  | 'Indoor Sports Light Housing'
 
 // ─── Navigation Types ──────────────────────────────────────────────────────────
 export interface NavItem {
