@@ -3,11 +3,11 @@ import { ArrowRight, ChevronDown } from 'lucide-react'
 import { PRODUCTS, STATS, WHY_CHOOSE_US } from '../data'
 import { COMPANY } from '../types'
 import { SectionHeader, Button } from '../components/ui'
-import ProductCard from '../components/ui/ProductCard'
+import ProductCardHomePage from '../components/ui/ProductCardHomePage'
 import EnquiryForm from '../components/ui/EnquiryForm'
 
 export default function HomePage() {
-  const featuredProducts = PRODUCTS.slice(0, 8)
+  const featuredProducts = PRODUCTS.slice(0, 4)
 
   return (
     <>
@@ -94,18 +94,18 @@ export default function HomePage() {
             title="Premium LED Lighting Solutions"
             subtitle="From street light housings to finish goods — precision-engineered for performance and longevity."
           />
-          <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+          <div className="min-h-200 grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-6">
             {featuredProducts.map((product) => (
-              <ProductCard key={product.id} product={product} />
+              <ProductCardHomePage key={product.id} product={product} />
             ))}
           </div>
-          <div className="text-center mt-12">
+          {/* <div className="text-center mt-12">
             <Link to="/products">
               <Button size="lg" variant="outline">
                 View All Products <ArrowRight size={18} />
               </Button>
             </Link>
-          </div>
+          </div> */}
         </div>
       </section>
 
