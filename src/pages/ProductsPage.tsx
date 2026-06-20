@@ -10,6 +10,7 @@ const ALL_CATEGORIES: (ProductCategory | 'All')[] = [
   'Street Light Housing',
   'Flood Light Housing',
   'Indoor Sports Light Housing',
+  'Linear Light',
 ]
 
 export default function ProductsPage() {
