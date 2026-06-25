@@ -18,13 +18,33 @@ export const NAV_ITEMS: NavItem[] = [
 ]
 
 export const PRODUCTS: Product[] = [
+    {
+    id: '22',
+    name: '50 W Linear Light',
+    category: 'Linear Light',
+    wattage: '100W',
+    image: "./products/rnipl-6100.png",
+    onImage: "./products/rnipl-6100-on.jpg",
+    offImage: "./products/rnipl-6100-off.jpg",
+    description: 'Classic dome-style Linear Light delivering uniform illumination for tables and office spaces.',
+    features: ['Polycarbonate dome', 'IP20 rated', 'Excellent heat dissipation', 'Hook & chain mount'],
+    enquiryEnabled: true,
+    specs: [
+      { label: "Code", value: "RNIPL-6100" },
+      { label: "Power", value: "50 WATT" },
+      { label: "Warranty", value: "2 YEAR" },
+      { label: "Length", value: "4 feet" },
+      { label: "Suspension", value: "Included" },
+    ],
+    document: "./document/RNIPL-6100.pdf",
+  },
   {
     id: '11',
     name: '100 W Pro Lens Flood Light',
     category: 'Flood Light Housing',
     wattage: '100W',
     image: "./products/rnipl-0072.jpeg",
-    onImage: "./products/rnipl-0072-on1.png",
+    onImage: "./products/rnipl-0072-on1.jpg",
     offImage: "./products/rnipl-0072-off1.png",
     description: 'Eco series down-choke flood light housing for 100W drivers with integrated heat sink.',
     features: ['Eco design', 'Integrated heatsink', 'IP65 rated', 'Driver cavity included'],
@@ -118,31 +138,11 @@ export const PRODUCTS: Product[] = [
     features: ['Polycarbonate dome', 'IP65 rated', 'Excellent heat dissipation', 'Hook & chain mount'],
     enquiryEnabled: true,
     specs: [
-      { label: "Code", value: "RNIPL-6150" },
-      { label: "Power", value: "150 WATT" },
+      { label: "Code", value: "RNIPL-6149" },
+      { label: "Power", value: "100 WATT" },
       { label: "Warranty", value: "2 YEAR" },
     ],
     document: "./document/RNIPL-0232.pdf",
-  },
-  {
-    id: '22',
-    name: '50 W Linear Light',
-    category: 'Linear Light',
-    wattage: '100W',
-    image: "./products/rnipl-6100.png",
-    onImage: "./products/rnipl-6100-on.jpg",
-    offImage: "./products/rnipl-6100-off.jpg",
-    description: 'Classic dome-style Linear Light delivering uniform illumination for tables and office spaces.',
-    features: ['Polycarbonate dome', 'IP20 rated', 'Excellent heat dissipation', 'Hook & chain mount'],
-    enquiryEnabled: true,
-    specs: [
-      { label: "Code", value: "RNIPL-6100" },
-      { label: "Power", value: "50 WATT" },
-      { label: "Warranty", value: "2 YEAR" },
-      { label: "Length", value: "4 feet" },
-      { label: "Suspension", value: "Included" },
-    ],
-    document: "./document/RNIPL-6100.pdf",
   },
   {
     id: '2',
@@ -485,9 +485,9 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: '16',
-    name: '36 W Eco Lens Street Light',
+    name: '50 W Eco Lens Street Light',
     category: 'Street Light Housing',
-    wattage: '36W',
+    wattage: '50W',
     image: "./products/rnipl-1102.jpeg",
     onImage: "./products/rnipl-1102.jpeg",
     offImage: "./products/rnipl-1102.jpeg",
@@ -567,7 +567,69 @@ export const PRODUCTS: Product[] = [
         value: "RNIPL-1157"
       }
     ],
-    document: "./document/RNIPL-1157.pdf",
+    document: "./document/RNIPL-1157.jpeg",
+  },
+  {
+    id: '23',
+    name: '100 W Rafail Leaf Street Light',
+    category: 'Street Light Housing',
+    wattage: '100W',
+    image: "./products/rnipl-1158.jpg",
+    onImage: "./products/rnipl-1158.jpg",
+    offImage: "./products/rnipl-1158.jpg",
+    description: 'Energy-efficient LED street lighting designed for optimal visibility and safety on roadways and pathways.',
+    features: ['Aluminium frame', 'Thermal management fins', 'Stainless hardware', 'IK08 impact resistant'],
+    enquiryEnabled: true,
+    specs: [
+      {
+        label: "Code",
+        value: "RNIPL-1158"
+      },
+      {
+        label: "Dimension",
+        value: "Ø 254 X 120 mm"
+      },
+      {
+        label: "Power",
+        value: "100 Watt"
+      },
+      {
+        label: "Warranty",
+        value: "2 Years"
+      }
+    ],
+    document: "./document/RNIPL-1158.pdf",
+  },
+  {
+    id: '24',
+    name: '150 W Rafail Leaf Street Light',
+    category: 'Street Light Housing',
+    wattage: '150W',
+    image: "./products/rnipl-1159.jpeg",
+    onImage: "./products/rnipl-1159.jpeg",
+    offImage: "./products/rnipl-1159.jpeg",
+    description: 'Energy-efficient LED street lighting designed for optimal visibility and safety on roadways and pathways.',
+    features: ['Aluminium frame', 'Thermal management fins', 'Stainless hardware', 'IK08 impact resistant', 'Auto restart after safe volatge mode', 'Compact and aesthestic design',],
+    enquiryEnabled: true,
+    specs: [
+      {
+        label: "Code",
+        value: "RNIPL-1159"
+      },
+      {
+        label: "Dimension",
+        value: "Ø 254 X 120 mm"
+      },
+      {
+        label: "Power",
+        value: "150 Watt"
+      },
+      {
+        label: "Warranty",
+        value: "2 Years"
+      }
+    ],
+    document: "./document/RNIPL-1159.pdf",
   },
     {
     id: '21',
@@ -587,6 +649,34 @@ export const PRODUCTS: Product[] = [
       { label: "Warranty", value: "2 YEAR" },
     ],
     document: "./document/RNIPL-0232.pdf",
+  },
+  {
+    id: '25',
+    name: '50 W High Bay Eco Spiral',
+    category: 'High Bay Light Housing',
+    wattage: '50W',
+    image: "./products/rnipl-2550.jpeg",
+    onImage: "./products/rnipl-2550.jpeg",
+    offImage: "./products/rnipl-2550.jpeg",
+    description: 'Classic dome-style high bay housing delivering uniform illumination for large spaces.',
+    features: ['Polycarbonate dome', 'IP65 rated', 'Excellent heat dissipation', 'Optical lens with silicon'],
+    enquiryEnabled: true,
+    specs: [
+      { label: "Code", value: "RNIPL-02550" },
+      { label: "Power", value: "50 WATT" },
+      { label: "Colour Temp.", value: "3000 K,6000 K" },
+      { label: "Power Factor", value: "> 0.95" },
+      { label: "Lumens/Watt", value: ">100LM/WATT" },
+      { label: "Dimension", value: "Ø 146 X 135 mm" },
+      { label: "IP Rating", value: "IP65" },
+      { label: "Warranty", value: "2 YEAR" },
+      { label: "Body WT", value: "215 gm" },
+      { label: "Frame WT", value: "100 gm" },
+      { label: "Driver Box WT", value: "185 gm" },
+      { label: "PCB Size", value: "Ø 113 mm" },
+      { label: "Overall Dim", value: "Ø 146 X 89 mm" },
+    ],
+    document: "./document/RNIPL-02550.pdf",
   },
 ]
 
