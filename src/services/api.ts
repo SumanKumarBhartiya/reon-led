@@ -1,30 +1,10 @@
 import type { EnquiryFormData, ApiResponse } from '../types'
 
-// ─── Config ───────────────────────────────────────────────────────────────────
-// When you're ready for a real backend, set VITE_API_URL in your .env file.
-// For GitHub Pages (static), the form falls back to a mailto link or a
-// free service like Formspree / EmailJS.
-const API_BASE = ""
-// const API_BASE = import.meta.env.VITE_API_URL ?? ''
-
-
 // ─── Enquiry ──────────────────────────────────────────────────────────────────
 export async function submitEnquiry(
   data: EnquiryFormData
 ): Promise<ApiResponse> {
-  // --- Real backend path ---
-  if (API_BASE) {
-    const res = await fetch(`${API_BASE}/api/enquiry`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(data),
-    })
-    return res.json() as Promise<ApiResponse>
-  }
-
-  // --- Formspree fallback (set VITE_FORMSPREE_ID in .env) ---
-  const formspreeId = ""
-  // const formspreeId = import.meta.env.VITE_FORMSPREE_ID
+  const formspreeId = "mojoeogv"
   if (formspreeId) {
     const res = await fetch(`https://formspree.io/f/${formspreeId}`, {
       method: 'POST',
@@ -36,7 +16,7 @@ export async function submitEnquiry(
   }
 
   // --- Static fallback: open mailto ---
-  const subject = encodeURIComponent(`Enquiry from ${data.name} – Reon LED`)
+  const subject = encodeURIComponent(`Enquiry from ${data.name} - Reon LED`)
   const body = encodeURIComponent(
     `Name: ${data.name}\nEmail: ${data.email}\nPhone: ${data.phone}\nCompany: ${data.company ?? '—'}\nProduct: ${data.productInterest ?? '—'}\n\n${data.message}`
   )
