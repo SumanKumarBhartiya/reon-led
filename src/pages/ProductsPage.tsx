@@ -11,6 +11,7 @@ const ALL_CATEGORIES: (ProductCategory | 'All')[] = [
   'Flood Light Housing',
   'Indoor Sports Light Housing',
   'Linear Light',
+  'Panel Lights',
 ]
 
 export default function ProductsPage() {

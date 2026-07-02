@@ -48,6 +48,7 @@ export type ProductCategory =
   | 'High Bay Light Housing'
   | 'Indoor Sports Light Housing'
   | 'Linear Light'
+  | 'Panel Lights'
 
 // ─── Navigation Types ──────────────────────────────────────────────────────────
 export interface NavItem {
