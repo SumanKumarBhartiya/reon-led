@@ -49,6 +49,7 @@ export type ProductCategory =
   | 'Indoor Sports Light Housing'
   | 'Linear Light'
   | 'Panel Lights'
+  | 'Inspection Lamp'
 
 // ─── Navigation Types ──────────────────────────────────────────────────────────
 export interface NavItem {
