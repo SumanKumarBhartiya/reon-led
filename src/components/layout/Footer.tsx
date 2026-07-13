@@ -63,6 +63,8 @@ export default function Footer() {
               'Flood Light Housing',
               'Indoor Sports Light Housing',
               'Linear Light',
+              'Panel Lights',
+              'Inspection Lamp',
               // 'Well Glass Light Housing',
               // 'Finish Goods',
               // 'PCB',
