@@ -8,6 +8,7 @@ import CareerPage from './pages/CareerPage'
 import BlogPage from './pages/BlogPage'
 import NotFoundPage from './pages/NotFoundPage'
 import ProductDetail from './pages/ProductDetail'
+import ProjectPage from './pages/projects'
 
 // NOTE: We use HashRouter (URL#hash routing) so that GitHub Pages
 // can serve any "route" without needing server-side redirects.
@@ -27,6 +28,7 @@ export default function App() {
           <Route path="contact" element={<ContactPage />} />
           <Route path="career" element={<CareerPage />} />
           <Route path="blog" element={<BlogPage />} />
+          <Route path="projects" element={<ProjectPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>

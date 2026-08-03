@@ -12,7 +12,7 @@ const ALL_CATEGORIES: (ProductCategory | 'All')[] = [
   'Indoor Sports Light Housing',
   'Linear Light',
   'Panel Lights',
-  'Panel Lights',
+  'Inspection Lamp',
 ]
 
 export default function ProductsPage() {

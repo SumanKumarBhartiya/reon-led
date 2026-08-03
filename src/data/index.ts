@@ -13,6 +13,7 @@ export const NAV_ITEMS: NavItem[] = [
     //   { label: 'Linear Lights', path: '/products/linear-light' },
     // ],
   },
+  {label: 'Projects', path: '/projects'},
   { label: 'About Us', path: '/about' },
   { label: 'Contact', path: '/contact' },
 ]
