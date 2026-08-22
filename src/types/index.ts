@@ -74,3 +74,9 @@ export interface ApiResponse<T = unknown> {
   message?: string
   error?: string
 }
+
+export interface Project {
+  id: string
+  name?: string
+  image: string
+}

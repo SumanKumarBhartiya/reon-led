@@ -1,4 +1,4 @@
-import type { Product, NavItem } from '../types'
+import type { Product, NavItem, Project } from '../types'
 
 export const NAV_ITEMS: NavItem[] = [
   { label: 'Home', path: '/' },
@@ -761,5 +761,44 @@ export const WHY_CHOOSE_US = [
     icon: '💬',
     title: 'Dedicated Support',
     description: 'Technical & after-sales support from our in-house team.',
+  },
+]
+
+
+export const PROJECTS: Project[] = [
+  {
+    id: "1",
+    name : "",
+    image: "./projects/p1.jpeg",
+  },
+  {
+    id: "2",
+    name : "",
+    image: "./projects/p2.jpeg",
+  },
+  {
+    id: "3",
+    name : "",
+    image: "./projects/p3.jpeg",
+  },
+  {
+    id: "4",
+    name : "",
+    image: "./projects/p4.jpeg",
+  },
+  {
+    id: "5",
+    name : "",
+    image: "./projects/p5.jpeg",
+  },
+  {
+    id: "6",
+    name : "",
+    image: "./projects/p6.jpeg",
+  },
+  {
+    id: "7",
+    name : "",
+    image: "./projects/p7.jpeg",
   },
 ]
