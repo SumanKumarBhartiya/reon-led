@@ -736,7 +736,7 @@ export const PRODUCTS: Product[] = [
         value: "2 Years"
       }
     ],
-    document: "./products/rnipl-1109.jpg",
+    document: "./products/rnipl-1109.png",
   },
   {
     id: '29',
@@ -922,7 +922,7 @@ export const PRODUCTS: Product[] = [
         value: "2 Years"
       }
     ],
-    document: "./products/rnipl-1128.jpg",
+    document: "./products/rnipl-1128.png",
   },
   {
     id: '21',
