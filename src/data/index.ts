@@ -771,8 +771,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: '31',
-    name: '100 W High Power Street Light',
-    category: 'Outdoor',
+    name: 'Decorative Arms Poles Light',
+    category: 'Poles',
     wattage: '100W',
     image: "./products/rnipl-1175.jpg",
     onImage: "./products/rnipl-1175.jpg",
@@ -830,6 +830,99 @@ export const PRODUCTS: Product[] = [
       }
     ],
     document: "./products/rnipl-1178.jpg",
+  },
+  {
+    id: '33',
+    name: 'Architectural Lighting Poles',
+    category: 'Poles',
+    wattage: '100W',
+    image: "./products/rnipl-1129.png",
+    onImage: "./products/rnipl-1129.png",
+    offImage: "./products/rnipl-1129.png",
+    description: 'Energy-efficient LED street lighting designed for optimal visibility and safety on roadways and pathways.',
+    features: ['Aluminium frame', 'Thermal management fins', 'Stainless hardware', 'IK08 impact resistant', 'Auto restart after safe volatge mode', 'Compact and aesthestic design',],
+    enquiryEnabled: true,
+    specs: [
+      {
+        label: "Code",
+        value: "RNIPL-1129"
+      },
+      {
+        label: "Dimension",
+        value: "Ø 254 X 120 mm"
+      },
+      {
+        label: "Power",
+        value: "100 Watt"
+      },
+      {
+        label: "Warranty",
+        value: "2 Years"
+      }
+    ],
+    document: "./products/rnipl-1129.png",
+  },
+  {
+    id: '34',
+    name: 'Architectural Lighting Poles',
+    category: 'Poles',
+    wattage: '100W',
+    image: "./products/rnipl-1130.jpg",
+    onImage: "./products/rnipl-1130.jpg",
+    offImage: "./products/rnipl-1130.jpg",
+    description: 'Energy-efficient LED street lighting designed for optimal visibility and safety on roadways and pathways.',
+    features: ['Aluminium frame', 'Thermal management fins', 'Stainless hardware', 'IK08 impact resistant', 'Auto restart after safe volatge mode', 'Compact and aesthestic design',],
+    enquiryEnabled: true,
+    specs: [
+      {
+        label: "Code",
+        value: "RNIPL-1130"
+      },
+      {
+        label: "Dimension",
+        value: "Ø 254 X 120 mm"
+      },
+      {
+        label: "Power",
+        value: "100 Watt"
+      },
+      {
+        label: "Warranty",
+        value: "2 Years"
+      }
+    ],
+    document: "./products/rnipl-1130.jpg",
+  },
+  {
+    id: '35',
+    name: 'Stadium Lighting Poles',
+    category: 'Poles',
+    wattage: '100W',
+    image: "./products/rnipl-1128.png",
+    onImage: "./products/rnipl-1128.jpg",
+    offImage: "./products/rnipl-1128.jpg",
+    description: 'Energy-efficient LED street lighting designed for optimal visibility and safety on roadways and pathways.',
+    features: ['Aluminium frame', 'Thermal management fins', 'Stainless hardware', 'IK08 impact resistant', 'Auto restart after safe volatge mode', 'Compact and aesthestic design',],
+    enquiryEnabled: true,
+    specs: [
+      {
+        label: "Code",
+        value: "RNIPL-1128"
+      },
+      {
+        label: "Dimension",
+        value: "Ø 254 X 120 mm"
+      },
+      {
+        label: "Power",
+        value: "100 Watt"
+      },
+      {
+        label: "Warranty",
+        value: "2 Years"
+      }
+    ],
+    document: "./products/rnipl-1128.jpg",
   },
   {
     id: '21',
