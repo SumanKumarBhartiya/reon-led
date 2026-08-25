@@ -13,13 +13,13 @@ export const NAV_ITEMS: NavItem[] = [
     //   { label: 'Linear Lights', path: '/products/linear-light' },
     // ],
   },
-  {label: 'Projects', path: '/projects'},
+  { label: 'Projects', path: '/projects' },
   { label: 'About Us', path: '/about' },
   { label: 'Contact', path: '/contact' },
 ]
 
 export const PRODUCTS: Product[] = [
-    {
+  {
     id: '22',
     name: '50 W Linear Light',
     category: 'Linear Light',
@@ -98,34 +98,36 @@ export const PRODUCTS: Product[] = [
     ],
     document: "./document/RNIPL-0231.pdf",
   },
-  {
-    id: '14',
-    name: '24 W Eco Lens Street Light',
-    category: 'Street Light Housing',
-    wattage: '24W',
-    image: "./products/rnipl-1100.jpeg",
-    onImage: "./products/rnipl-1100-on.jpg",
-    offImage: "./products/rnipl-1100-off.jpg",
-    description: 'Durable die-cast aluminium housing designed for 24W street light applications with IP66 rating.',
-    features: ['Die-cast aluminium', 'IP66 rated', 'Anti-corrosion coating', 'Easy PCB mounting'],
+    {
+    id: '30',
+    name: 'Area Lighting Poles',
+    category: 'Poles',
+    wattage: '100W',
+    image: "./products/rnipl-1170.png",
+    onImage: "./products/rnipl-1170-on.jpg",
+    offImage: "./products/rnipl-1170-off.png",
+    description: 'Energy-efficient LED street lighting designed for optimal visibility and safety on roadways and pathways.',
+    features: ['Aluminium frame', 'Thermal management fins', 'Stainless hardware', 'IK08 impact resistant', 'Auto restart after safe volatge mode', 'Compact and aesthestic design',],
     enquiryEnabled: true,
     specs: [
-      { label: "Code", value: "RNIPL-1100" },
-      { label: "Power", value: "24 WATT" },
-      { label: "Colour Temp.", value: "3000 K,6000 K" },
-      { label: "Power Factor", value: "> 0.95" },
-      { label: "Lumens/Watt", value: ">100LM/WATT" },
-      { label: "Dimension", value: "265 X 108 X 53 mm" },
-      { label: "Pipe Dia", value: "Ø 45 mm" },
-      { label: "IP Rating", value: "IP65" },
-      { label: "Warranty", value: "2 YEAR" },
-      { label: "Body WT", value: "200 gm" },
-      { label: "PCB Size", value: "105 X 60 mm" },
-      { label: "Driver Area", value: "93 X 56 X 41 mm" },
-      { label: "Overall Dim", value: "265 X 108 X 53 mm" },
-      { label: "Gross WT", value: "280 gm" }
+      {
+        label: "Code",
+        value: "RNIPL-1170"
+      },
+      {
+        label: "Dimension",
+        value: "Ø 254 X 120 mm"
+      },
+      {
+        label: "Power",
+        value: "100 Watt"
+      },
+      {
+        label: "Warranty",
+        value: "2 Years"
+      }
     ],
-    document: "./document/RNIPL-1100.pdf",
+    document: "./products/rnipl-1170.jpg",
   },
   {
     id: '20',
@@ -188,6 +190,35 @@ export const PRODUCTS: Product[] = [
       { label: "Warranty", value: "1 YEAR" },
     ],
     document: "./document/RNIPL-610010.pdf",
+  },
+  {
+    id: '14',
+    name: '24 W Eco Lens Street Light',
+    category: 'Street Light Housing',
+    wattage: '24W',
+    image: "./products/rnipl-1100.jpeg",
+    onImage: "./products/rnipl-1100-on.jpg",
+    offImage: "./products/rnipl-1100-off.jpg",
+    description: 'Durable die-cast aluminium housing designed for 24W street light applications with IP66 rating.',
+    features: ['Die-cast aluminium', 'IP66 rated', 'Anti-corrosion coating', 'Easy PCB mounting'],
+    enquiryEnabled: true,
+    specs: [
+      { label: "Code", value: "RNIPL-1100" },
+      { label: "Power", value: "24 WATT" },
+      { label: "Colour Temp.", value: "3000 K,6000 K" },
+      { label: "Power Factor", value: "> 0.95" },
+      { label: "Lumens/Watt", value: ">100LM/WATT" },
+      { label: "Dimension", value: "265 X 108 X 53 mm" },
+      { label: "Pipe Dia", value: "Ø 45 mm" },
+      { label: "IP Rating", value: "IP65" },
+      { label: "Warranty", value: "2 YEAR" },
+      { label: "Body WT", value: "200 gm" },
+      { label: "PCB Size", value: "105 X 60 mm" },
+      { label: "Driver Area", value: "93 X 56 X 41 mm" },
+      { label: "Overall Dim", value: "265 X 108 X 53 mm" },
+      { label: "Gross WT", value: "280 gm" }
+    ],
+    document: "./document/RNIPL-1100.pdf",
   },
   {
     id: '2',
@@ -676,7 +707,131 @@ export const PRODUCTS: Product[] = [
     ],
     document: "./document/RNIPL-1159.pdf",
   },
-    {
+  {
+    id: '28',
+    name: 'Cast Iron Lighting Poles',
+    category: 'Poles',
+    wattage: '100W',
+    image: "./products/rnipl-1109.png",
+    onImage: "./products/rnipl-1109.jpg",
+    offImage: "./products/rnipl-1109.jpg",
+    description: 'Energy-efficient LED street lighting designed for optimal visibility and safety on roadways and pathways.',
+    features: ['Aluminium frame', 'Thermal management fins', 'Stainless hardware', 'IK08 impact resistant', 'Auto restart after safe volatge mode', 'Compact and aesthestic design',],
+    enquiryEnabled: true,
+    specs: [
+      {
+        label: "Code",
+        value: "RNIPL-1109"
+      },
+      {
+        label: "Dimension",
+        value: "Ø 254 X 120 mm"
+      },
+      {
+        label: "Power",
+        value: "100 Watt"
+      },
+      {
+        label: "Warranty",
+        value: "2 Years"
+      }
+    ],
+    document: "./products/rnipl-1109.jpg",
+  },
+  {
+    id: '29',
+    name: 'Aluminium Lighting Poles',
+    category: 'Poles',
+    wattage: '100W',
+    image: "./products/rnipl-1127.jpg",
+    onImage: "./products/rnipl-1127-on.jpg",
+    offImage: "./products/rnipl-1127-on.jpeg",
+    description: 'Energy-efficient LED street lighting designed for optimal visibility and safety on roadways and pathways.',
+    features: ['Aluminium frame', 'Thermal management fins', 'Stainless hardware', 'IK08 impact resistant', 'Auto restart after safe volatge mode', 'Compact and aesthestic design',],
+    enquiryEnabled: true,
+    specs: [
+      {
+        label: "Code",
+        value: "RNIPL-1127"
+      },
+      {
+        label: "Dimension",
+        value: "Ø 254 X 120 mm"
+      },
+      {
+        label: "Power",
+        value: "100 Watt"
+      },
+      {
+        label: "Warranty",
+        value: "2 Years"
+      }
+    ],
+    document: "./products/rnipl-1127.jpg",
+  },
+  {
+    id: '31',
+    name: '100 W High Power Street Light',
+    category: 'Outdoor',
+    wattage: '100W',
+    image: "./products/rnipl-1175.jpg",
+    onImage: "./products/rnipl-1175.jpg",
+    offImage: "./products/rnipl-1175.jpeg",
+    description: 'Energy-efficient LED street lighting designed for optimal visibility and safety on roadways and pathways.',
+    features: ['Aluminium frame', 'Thermal management fins', 'Stainless hardware', 'IK08 impact resistant', 'Auto restart after safe volatge mode', 'Compact and aesthestic design',],
+    enquiryEnabled: true,
+    specs: [
+      {
+        label: "Code",
+        value: "RNIPL-1175"
+      },
+      {
+        label: "Dimension",
+        value: "Ø 254 X 120 mm"
+      },
+      {
+        label: "Power",
+        value: "100 Watt"
+      },
+      {
+        label: "Warranty",
+        value: "2 Years"
+      }
+    ],
+    document: "./products/rnipl-1175.jpg",
+  },
+  {
+    id: '32',
+    name: 'Garden Lighting Poles',
+    category: 'Poles',
+    wattage: '100W',
+    image: "./products/rnipl-1178.jpg",
+    onImage: "./products/rnipl-1178-on.jpg",
+    offImage: "./products/rnipl-1178-on.jpeg",
+    description: 'Energy-efficient LED street lighting designed for optimal visibility and safety on roadways and pathways.',
+    features: ['Aluminium frame', 'Thermal management fins', 'Stainless hardware', 'IK08 impact resistant', 'Auto restart after safe volatge mode', 'Compact and aesthestic design',],
+    enquiryEnabled: true,
+    specs: [
+      {
+        label: "Code",
+        value: "RNIPL-1178"
+      },
+      {
+        label: "Dimension",
+        value: "Ø 254 X 120 mm"
+      },
+      {
+        label: "Power",
+        value: "100 Watt"
+      },
+      {
+        label: "Warranty",
+        value: "2 Years"
+      }
+    ],
+    document: "./products/rnipl-1178.jpg",
+  },
+  {
     id: '21',
     name: '150 W Badminton Court Light',
     category: 'Indoor Sports Light Housing',
@@ -768,37 +923,37 @@ export const WHY_CHOOSE_US = [
 export const PROJECTS: Project[] = [
   {
     id: "1",
-    name : "",
+    name: "",
     image: "./projects/p1.jpeg",
   },
   {
     id: "2",
-    name : "",
+    name: "",
     image: "./projects/p2.jpeg",
   },
   {
     id: "3",
-    name : "",
+    name: "",
     image: "./projects/p3.jpeg",
   },
   {
     id: "4",
-    name : "",
+    name: "",
     image: "./projects/p4.jpeg",
   },
   {
     id: "5",
-    name : "",
+    name: "",
     image: "./projects/p5.jpeg",
   },
   {
     id: "6",
-    name : "",
+    name: "",
     image: "./projects/p6.jpeg",
   },
   {
     id: "7",
-    name : "",
+    name: "",
     image: "./projects/p7.jpeg",
   },
 ]
