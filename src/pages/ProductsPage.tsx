@@ -8,6 +8,7 @@ const ALL_CATEGORIES: (ProductCategory | 'All')[] = [
   'All',
   'High Bay Light Housing',
   'Street Light Housing',
+  'Poles',
   'Flood Light Housing',
   'Indoor Sports Light Housing',
   'Linear Light',

@@ -60,6 +60,7 @@ export default function Footer() {
             {[
               'High Bay Light Housing',
               'Street Light Housing',
+              'Poles',
               'Flood Light Housing',
               'Indoor Sports Light Housing',
               'Linear Light',

@@ -44,6 +44,7 @@ export interface Product {
 
 export type ProductCategory =
   | 'Street Light Housing'
+  | 'Poles'
   | 'Flood Light Housing'
   | 'High Bay Light Housing'
   | 'Indoor Sports Light Housing'
