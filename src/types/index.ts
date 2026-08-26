@@ -27,22 +27,33 @@ export interface Specification {
   value: string
 }
 
+export interface featuredProduct {
+  id: string
+  category: ProductCategory
+  onImage?: string
+  offImage?: string
+}
+
 export interface Product {
   id: string
   name: string
   category: ProductCategory
+  subCategory: ProductSubCategory
   wattage: string
   description: string
   features: string[]
   image?: string
-  onImage?: string
-  offImage?: string
   enquiryEnabled: boolean,
   specs: Specification[],
   document: string,
 }
 
 export type ProductCategory =
+  | 'Indoor'
+  | 'Outdoor'
+  | 'Poles'
+
+export type ProductSubCategory =
   | 'Street Light Housing'
   | 'Poles'
   | 'Flood Light Housing'
@@ -51,6 +62,7 @@ export type ProductCategory =
   | 'Linear Light'
   | 'Panel Lights'
   | 'Inspection Lamp'
+  | 'Aluminium Lighting Poles'
 
 // ─── Navigation Types ──────────────────────────────────────────────────────────
 export interface NavItem {

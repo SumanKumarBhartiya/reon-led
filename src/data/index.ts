@@ -1,4 +1,4 @@
-import type { Product, NavItem, Project } from '../types'
+import type { Product, NavItem, Project, featuredProduct } from '../types'
 
 export const NAV_ITEMS: NavItem[] = [
   { label: 'Home', path: '/' },
@@ -18,35 +18,53 @@ export const NAV_ITEMS: NavItem[] = [
   { label: 'Contact', path: '/contact' },
 ]
 
-export const PRODUCTS: Product[] = [
+export const FeaturedProducts: featuredProduct[] = [
   {
-    id: '22',
-    name: '50 W Linear Light',
-    category: 'Linear Light',
-    wattage: '100W',
-    image: "./products/rnipl-6100.png",
+    id: "1",
+    category: "Indoor",
     onImage: "./products/rnipl-6100-on.jpg",
     offImage: "./products/rnipl-6100-off.jpg",
-    description: 'Classic dome-style Linear Light delivering uniform illumination for tables and office spaces.',
-    features: ['Polycarbonate dome', 'IP20 rated', 'Excellent heat dissipation', 'Hook & chain mount'],
-    enquiryEnabled: true,
-    specs: [
-      { label: "Code", value: "RNIPL-6100" },
-      { label: "Power", value: "50 WATT" },
-      { label: "Warranty", value: "2 YEAR" },
-      { label: "Length", value: "4 feet" },
-      { label: "Suspension", value: "Included" },
-    ],
-    document: "./document/RNIPL-6100.pdf",
   },
+  {
+    id: "2",
+    category: "Outdoor",
+    onImage: "./products/rnipl-0072-on1.jpg",
+    offImage: "./products/rnipl-0072-off1.png",
+  },
+  {
+    id: "3",
+    category: "Indoor",
+    onImage: "./products/rnipl-0231-on.jpg",
+    offImage: "./products/rnipl-0231-off.png",
+  },
+  {
+    id: "4",
+    category: "Poles",
+    onImage: "./products/rnipl-1170-on.jpg",
+    offImage: "./products/rnipl-1170-off.png",
+  },
+  {
+    id: "5",
+    category: "Indoor",
+    onImage: "./products/rnipl-6149-on.jpg",
+    offImage: "./products/rnipl-6149-off.jpg",
+  },
+  {
+    id: "6",
+    category: "Indoor",
+    onImage: "./products/rnipl-61888-on.jpg",
+    offImage: "./products/rnipl-61888-off.jpg",
+  },
+]
+
+export const PRODUCTS: Product[] = [
   {
     id: '11',
     name: '100 W Pro Lens Flood Light',
-    category: 'Flood Light Housing',
+    category: 'Outdoor',
+    subCategory: 'Flood Light Housing',
     wattage: '100W',
     image: "./products/rnipl-0072.jpeg",
-    onImage: "./products/rnipl-0072-on1.jpg",
-    offImage: "./products/rnipl-0072-off1.png",
     description: 'Eco series down-choke flood light housing for 100W drivers with integrated heat sink.',
     features: ['Eco design', 'Integrated heatsink', 'IP65 rated', 'Driver cavity included'],
     enquiryEnabled: true,
@@ -71,11 +89,10 @@ export const PRODUCTS: Product[] = [
   {
     id: '1',
     name: '50-60 W SpotLens High Bay',
-    category: 'High Bay Light Housing',
+    category: 'Indoor',
+    subCategory: 'High Bay Light Housing',
     wattage: '50-60W',
     image: "./products/rnipl-0231.jpeg",
-    onImage: "./products/rnipl-0231-on.jpg",
-    offImage: "./products/rnipl-0231-off.png",
     description: 'Industrial-grade high bay glass housing for warehouses and factory ceilings.',
     features: ['Toughened glass diffuser', 'IP65 rated', 'Hanging / surface mount', 'Corrosion resistant'],
     enquiryEnabled: true,
@@ -98,14 +115,13 @@ export const PRODUCTS: Product[] = [
     ],
     document: "./document/RNIPL-0231.pdf",
   },
-    {
+  {
     id: '29',
     name: 'Aluminium Lighting Poles',
     category: 'Poles',
+    subCategory: 'Poles',
     wattage: '100W',
     image: "./products/rnipl-1127.jpg",
-    onImage: "./products/rnipl-1170-on.jpg",
-    offImage: "./products/rnipl-1170-off.png",
     description: 'Energy-efficient LED street lighting designed for optimal visibility and safety on roadways and pathways.',
     features: ['Aluminium frame', 'Thermal management fins', 'Stainless hardware', 'IK08 impact resistant', 'Auto restart after safe volatge mode', 'Compact and aesthestic design',],
     enquiryEnabled: true,
@@ -129,45 +145,13 @@ export const PRODUCTS: Product[] = [
     ],
     document: "./products/rnipl-1127.jpg",
   },
-  //   {
-  //   id: '30',
-  //   name: 'Area Lighting Poles',
-  //   category: 'Poles',
-  //   wattage: '100W',
-  //   image: "./products/rnipl-1170.png",
-  //   onImage: "./products/rnipl-1170-on.jpg",
-  //   offImage: "./products/rnipl-1170-off.png",
-  //   description: 'Energy-efficient LED street lighting designed for optimal visibility and safety on roadways and pathways.',
-  //   features: ['Aluminium frame', 'Thermal management fins', 'Stainless hardware', 'IK08 impact resistant', 'Auto restart after safe volatge mode', 'Compact and aesthestic design',],
-  //   enquiryEnabled: true,
-  //   specs: [
-  //     {
-  //       label: "Code",
-  //       value: "RNIPL-1170"
-  //     },
-  //     {
-  //       label: "Dimension",
-  //       value: "Ø 254 X 120 mm"
-  //     },
-  //     {
-  //       label: "Power",
-  //       value: "100 Watt"
-  //     },
-  //     {
-  //       label: "Warranty",
-  //       value: "2 Years"
-  //     }
-  //   ],
-  //   document: "./products/rnipl-1170.jpg",
-  // },
   {
     id: '20',
     name: '100 W Badminton Court Light',
-    category: 'Indoor Sports Light Housing',
+    category: 'Indoor',
+    subCategory: 'Indoor Sports Light Housing',
     wattage: '100W',
     image: "./products/rnipl-6149.jpeg",
-    onImage: "./products/rnipl-6149-on.jpg",
-    offImage: "./products/rnipl-6149-off.jpg",
     description: 'Classic dome-style Indoor sports light housing delivering uniform illumination for badminton court.',
     features: ['Polycarbonate dome', 'IP65 rated', 'Excellent heat dissipation', 'Hook & chain mount'],
     enquiryEnabled: true,
@@ -181,11 +165,10 @@ export const PRODUCTS: Product[] = [
   {
     id: '26',
     name: '48 W 2x2 Recessed LED Panel Light',
-    category: 'Panel Lights',
+    category: 'Indoor',
+    subCategory: 'Panel Lights',
     wattage: '48W',
     image: "./products/rnipl-61888.jpg",
-    onImage: "./products/rnipl-61888-on.jpg",
-    offImage: "./products/rnipl-61888-off.jpg",
     description: 'Classic dome-style panel light delivering uniform illumination for large spaces.',
     features: ["Ideal for commercial spaces", " Durable materials for lasting performance", "Cool White for balanced, glare-free lighting"], // Add from the sheet
     enquiryEnabled: true,
@@ -205,11 +188,10 @@ export const PRODUCTS: Product[] = [
   {
     id: '27',
     name: '12 W Inspection Lamp',
-    category: 'Inspection Lamp',
+    category: 'Indoor',
+    subCategory: 'Inspection Lamp',
     wattage: '12W',
     image: "./products/rnipl-610010.png",
-    onImage: "./products/rnipl-610010.png",
-    offImage: "./products/rnipl-610010.png",
     description: 'Classic dome-style inspection lamp delivering uniform illumination for small spaces.',
     features: ['Low energy usage', 'High performance', 'Anti glare type'],
     enquiryEnabled: true,
@@ -225,11 +207,10 @@ export const PRODUCTS: Product[] = [
   {
     id: '14',
     name: '24 W Eco Lens Street Light',
-    category: 'Street Light Housing',
+    category: 'Outdoor',
+    subCategory: 'Street Light Housing',
     wattage: '24W',
     image: "./products/rnipl-1100.jpeg",
-    onImage: "./products/rnipl-1100-on.jpg",
-    offImage: "./products/rnipl-1100-off.jpg",
     description: 'Durable die-cast aluminium housing designed for 24W street light applications with IP66 rating.',
     features: ['Die-cast aluminium', 'IP66 rated', 'Anti-corrosion coating', 'Easy PCB mounting'],
     enquiryEnabled: true,
@@ -254,11 +235,10 @@ export const PRODUCTS: Product[] = [
   {
     id: '2',
     name: '100 W Spot Lens High Bay',
-    category: 'High Bay Light Housing',
+    category: 'Indoor',
+    subCategory: 'High Bay Light Housing',
     wattage: '100W',
     image: "./products/rnipl-0232.jpeg",
-    onImage: "./products/rnipl-0232.jpeg",
-    offImage: "./products/rnipl-0232.jpeg",
     description: 'Classic dome-style high bay housing delivering uniform illumination for large spaces.',
     features: ['Polycarbonate dome', 'IP65 rated', 'Excellent heat dissipation', 'Hook & chain mount'],
     enquiryEnabled: true,
@@ -283,11 +263,10 @@ export const PRODUCTS: Product[] = [
   {
     id: '3',
     name: '50 W  Well Glass Clear',
-    category: 'High Bay Light Housing',
+    category: 'Indoor',
+    subCategory: 'High Bay Light Housing',
     wattage: '50W',
     image: "./products/rnipl-323.jpeg",
-    onImage: "./products/rnipl-323.jpeg",
-    offImage: "./products/rnipl-323.jpeg",
     description: 'Classic dome-style high bay housing delivering uniform illumination for large spaces.',
     features: ['Polycarbonate dome', 'IP65 rated', 'Excellent heat dissipation', 'Hook & chain mount'],
     enquiryEnabled: true,
@@ -306,11 +285,10 @@ export const PRODUCTS: Product[] = [
   {
     id: '4',
     name: '100 W  Well Glass Clear',
-    category: 'High Bay Light Housing',
+    category: 'Indoor',
+    subCategory: 'High Bay Light Housing',
     wattage: '100W',
     image: "./products/rnipl-324.jpeg",
-    onImage: "./products/rnipl-324.jpeg",
-    offImage: "./products/rnipl-324.jpeg",
     description: 'Classic dome-style high bay housing delivering uniform illumination for large spaces.',
     features: ['Polycarbonate dome', 'IP65 rated', 'Excellent heat dissipation', 'Hook & chain mount'],
     enquiryEnabled: true,
@@ -329,11 +307,10 @@ export const PRODUCTS: Product[] = [
   {
     id: '5',
     name: '100 W High Bay Spot Lens',
-    category: 'High Bay Light Housing',
+    category: 'Indoor',
+    subCategory: 'High Bay Light Housing',
     wattage: '100W',
     image: "./products/rnipl-0233.jpeg",
-    onImage: "./products/rnipl-0233.jpeg",
-    offImage: "./products/rnipl-0233.jpeg",
     description: 'Classic dome-style high bay housing delivering uniform illumination for large spaces.',
     features: ['Polycarbonate dome', 'IP65 rated', 'Excellent heat dissipation', 'Hook & chain mount'],
     enquiryEnabled: true,
@@ -359,11 +336,10 @@ export const PRODUCTS: Product[] = [
   {
     id: '6',
     name: '150 W High Bay Spot Lens',
-    category: 'High Bay Light Housing',
+    category: 'Indoor',
+    subCategory: 'High Bay Light Housing',
     wattage: '150W',
     image: "./products/rnipl-0234.jpeg",
-    onImage: "./products/rnipl-0234.jpeg",
-    offImage: "./products/rnipl-0234.jpeg",
     description: 'Classic dome-style high bay housing delivering uniform illumination for large spaces.',
     features: ['Polycarbonate dome', 'IP65 rated', 'Excellent heat dissipation', 'Hook & chain mount'],
     enquiryEnabled: true,
@@ -388,11 +364,10 @@ export const PRODUCTS: Product[] = [
   {
     id: '7',
     name: '200 W High Bay Spot Lens Pro',
-    category: 'High Bay Light Housing',
+    category: 'Indoor',
+    subCategory: 'High Bay Light Housing',
     wattage: '200W',
     image: "./products/rnipl-0235.jpeg",
-    onImage: "./products/rnipl-0235.jpeg",
-    offImage: "./products/rnipl-0235.jpeg",
     description: 'Classic dome-style high bay housing delivering uniform illumination for large spaces.',
     features: ['Polycarbonate dome', 'IP65 rated', 'Excellent heat dissipation', 'Hook & chain mount'],
     enquiryEnabled: true,
@@ -417,11 +392,10 @@ export const PRODUCTS: Product[] = [
   {
     id: '8',
     name: '100 W High Bay Eco Spiral',
-    category: 'High Bay Light Housing',
+    category: 'Indoor',
+    subCategory: 'High Bay Light Housing',
     wattage: '100W',
     image: "./products/rnipl-02551.jpeg",
-    onImage: "./products/rnipl-02551.jpeg",
-    offImage: "./products/rnipl-02551.jpeg",
     description: 'Classic dome-style high bay housing delivering uniform illumination for large spaces.',
     features: ['Polycarbonate dome', 'IP65 rated', 'Excellent heat dissipation', 'Hook & chain mount'],
     enquiryEnabled: true,
@@ -447,11 +421,10 @@ export const PRODUCTS: Product[] = [
   {
     id: '9',
     name: '150 W High Bay Eco Spiral',
-    category: 'High Bay Light Housing',
+    category: 'Indoor',
+    subCategory: 'High Bay Light Housing',
     wattage: '150W',
     image: "./products/rnipl-02552.jpeg",
-    onImage: "./products/rnipl-02552.jpeg",
-    offImage: "./products/rnipl-02552.jpeg",
     description: 'Classic dome-style high bay housing delivering uniform illumination for large spaces.',
     features: ['Polycarbonate dome', 'IP65 rated', 'Excellent heat dissipation', 'Hook & chain mount'],
     enquiryEnabled: true,
@@ -477,11 +450,10 @@ export const PRODUCTS: Product[] = [
   {
     id: '10',
     name: '50 W Pro Lens Flood Light',
-    category: 'Flood Light Housing',
+    category: 'Outdoor',
+    subCategory: 'Flood Light Housing',
     wattage: '50W',
     image: "./products/rnipl-0071.jpeg",
-    onImage: "./products/rnipl-0071-on.png",
-    offImage: "./products/rnipl-0071-off.png",
     description: 'Heavy-duty flood light housing with adjustable bracket for industrial & commercial use.',
     features: ['High-pressure die cast', 'IP65 rated', 'Adjustable tilt bracket', 'Wide beam compatibility'],
     enquiryEnabled: true,
@@ -506,11 +478,10 @@ export const PRODUCTS: Product[] = [
   {
     id: '12',
     name: '200 W Pro Lens Flood Light',
-    category: 'Flood Light Housing',
+    category: 'Outdoor',
+    subCategory: 'Flood Light Housing',
     wattage: '200W',
     image: "./products/rnipl-0073.jpeg",
-    onImage: "./products/rnipl-0073-on1.png",
-    offImage: "./products/rnipl-0073-off.png",
     description: 'Heavy-duty flood light housing with adjustable bracket for industrial & commercial use.',
     features: ['Eco design', 'Integrated heatsink', 'IP65 rated', 'Driver cavity included'],
     enquiryEnabled: true,
@@ -535,11 +506,10 @@ export const PRODUCTS: Product[] = [
   {
     id: '13',
     name: '130-150 W Pro Lens Flood Light',
-    category: 'Flood Light Housing',
+    category: 'Outdoor',
+    subCategory: 'Flood Light Housing',
     wattage: '130-150W',
     image: "./products/rnipl-0074.jpeg",
-    onImage: "./products/rnipl-0074-on.png",
-    offImage: "./products/rnipl-0074-off.png",
     description: 'Heavy-duty flood light housing with adjustable bracket for industrial & commercial use.',
     features: ['Eco design', 'Integrated heatsink', 'IP65 rated', 'Driver cavity included'],
     enquiryEnabled: true,
@@ -564,11 +534,10 @@ export const PRODUCTS: Product[] = [
   {
     id: '15',
     name: '36 W Eco Lens Street Light',
-    category: 'Street Light Housing',
+    category: 'Outdoor',
+    subCategory: 'Street Light Housing',
     wattage: '36W',
     image: "./products/rnipl-1101.jpeg",
-    onImage: "./products/rnipl-1101.jpeg",
-    offImage: "./products/rnipl-1101.jpeg",
     description: 'Energy-efficient LED street lighting designed for optimal visibility and safety on roadways and pathways.',
     features: ['Aluminium frame', 'Thermal management fins', 'Stainless hardware', 'IK08 impact resistant'],
     enquiryEnabled: true,
@@ -593,11 +562,10 @@ export const PRODUCTS: Product[] = [
   {
     id: '16',
     name: '50 W Eco Lens Street Light',
-    category: 'Street Light Housing',
+    category: 'Outdoor',
+    subCategory: 'Street Light Housing',
     wattage: '50W',
     image: "./products/rnipl-1102.jpeg",
-    onImage: "./products/rnipl-1102.jpeg",
-    offImage: "./products/rnipl-1102.jpeg",
     description: 'Energy-efficient LED street lighting designed for optimal visibility and safety on roadways and pathways.',
     features: ['Aluminium frame', 'Thermal management fins', 'Stainless hardware', 'IK08 impact resistant'],
     enquiryEnabled: true,
@@ -622,11 +590,10 @@ export const PRODUCTS: Product[] = [
   {
     id: '17',
     name: '24 W Rafail Leaf Street Light',
-    category: 'Street Light Housing',
+    category: 'Outdoor',
+    subCategory: 'Street Light Housing',
     wattage: '36W',
     image: "./products/rnipl-1155.jpeg",
-    onImage: "./products/rnipl-1155.jpeg",
-    offImage: "./products/rnipl-1155.jpeg",
     description: 'Energy-efficient LED street lighting designed for optimal visibility and safety on roadways and pathways.',
     features: ['Aluminium frame', 'Thermal management fins', 'Stainless hardware', 'IK08 impact resistant'],
     enquiryEnabled: true,
@@ -641,11 +608,10 @@ export const PRODUCTS: Product[] = [
   {
     id: '18',
     name: '50 W Rafail Leaf Street Light',
-    category: 'Street Light Housing',
+    category: 'Outdoor',
+    subCategory: 'Street Light Housing',
     wattage: '50W',
     image: "./products/rnipl-1156.jpeg",
-    onImage: "./products/rnipl-1156.jpeg",
-    offImage: "./products/rnipl-1156.jpeg",
     description: 'Energy-efficient LED street lighting designed for optimal visibility and safety on roadways and pathways.',
     features: ['Aluminium frame', 'Thermal management fins', 'Stainless hardware', 'IK08 impact resistant'],
     enquiryEnabled: true,
@@ -660,11 +626,10 @@ export const PRODUCTS: Product[] = [
   {
     id: '19',
     name: '50 W Rafail Leaf Street Light',
-    category: 'Street Light Housing',
+    category: 'Outdoor',
+    subCategory: 'Street Light Housing',
     wattage: '50W',
     image: "./products/rnipl-1157.jpeg",
-    onImage: "./products/rnipl-1157.jpeg",
-    offImage: "./products/rnipl-1157.jpeg",
     description: 'Energy-efficient LED street lighting designed for optimal visibility and safety on roadways and pathways.',
     features: ['Aluminium frame', 'Thermal management fins', 'Stainless hardware', 'IK08 impact resistant'],
     enquiryEnabled: true,
@@ -679,11 +644,10 @@ export const PRODUCTS: Product[] = [
   {
     id: '23',
     name: '100 W Rafail Leaf Street Light',
-    category: 'Street Light Housing',
+    category: 'Outdoor',
+    subCategory: 'Street Light Housing',
     wattage: '100W',
     image: "./products/rnipl-1158.jpg",
-    onImage: "./products/rnipl-1158.jpg",
-    offImage: "./products/rnipl-1158.jpg",
     description: 'Energy-efficient LED street lighting designed for optimal visibility and safety on roadways and pathways.',
     features: ['Aluminium frame', 'Thermal management fins', 'Stainless hardware', 'IK08 impact resistant'],
     enquiryEnabled: true,
@@ -710,11 +674,10 @@ export const PRODUCTS: Product[] = [
   {
     id: '24',
     name: '150 W Rafail Leaf Street Light',
-    category: 'Street Light Housing',
+    category: 'Outdoor',
+    subCategory: 'Street Light Housing',
     wattage: '150W',
     image: "./products/rnipl-1159.jpeg",
-    onImage: "./products/rnipl-1159.jpeg",
-    offImage: "./products/rnipl-1159.jpeg",
     description: 'Energy-efficient LED street lighting designed for optimal visibility and safety on roadways and pathways.',
     features: ['Aluminium frame', 'Thermal management fins', 'Stainless hardware', 'IK08 impact resistant', 'Auto restart after safe volatge mode', 'Compact and aesthestic design',],
     enquiryEnabled: true,
@@ -742,10 +705,9 @@ export const PRODUCTS: Product[] = [
     id: '28',
     name: 'Cast Iron Lighting Poles',
     category: 'Poles',
+    subCategory: 'Poles',
     wattage: '100W',
     image: "./products/rnipl-1109.png",
-    onImage: "./products/rnipl-1109.jpg",
-    offImage: "./products/rnipl-1109.jpg",
     description: 'Energy-efficient LED street lighting designed for optimal visibility and safety on roadways and pathways.',
     features: ['Aluminium frame', 'Thermal management fins', 'Stainless hardware', 'IK08 impact resistant', 'Auto restart after safe volatge mode', 'Compact and aesthestic design',],
     enquiryEnabled: true,
@@ -769,45 +731,13 @@ export const PRODUCTS: Product[] = [
     ],
     document: "./products/rnipl-1109.png",
   },
-  // {
-  //   id: '31',
-  //   name: 'Decorative Arms Poles Light',
-  //   category: 'Poles',
-  //   wattage: '100W',
-  //   image: "./products/rnipl-1175.jpg",
-  //   onImage: "./products/rnipl-1175.jpg",
-  //   offImage: "./products/rnipl-1175.jpeg",
-  //   description: 'Energy-efficient LED street lighting designed for optimal visibility and safety on roadways and pathways.',
-  //   features: ['Aluminium frame', 'Thermal management fins', 'Stainless hardware', 'IK08 impact resistant', 'Auto restart after safe volatge mode', 'Compact and aesthestic design',],
-  //   enquiryEnabled: true,
-  //   specs: [
-  //     {
-  //       label: "Code",
-  //       value: "RNIPL-1175"
-  //     },
-  //     {
-  //       label: "Dimension",
-  //       value: "Ø 254 X 120 mm"
-  //     },
-  //     {
-  //       label: "Power",
-  //       value: "100 Watt"
-  //     },
-  //     {
-  //       label: "Warranty",
-  //       value: "2 Years"
-  //     }
-  //   ],
-  //   document: "./products/rnipl-1175.jpg",
-  // },
   {
     id: '32',
     name: 'Garden Lighting Poles',
     category: 'Poles',
+    subCategory: 'Poles',
     wattage: '100W',
     image: "./products/rnipl-1178.jpg",
-    onImage: "./products/rnipl-1178-on.jpg",
-    offImage: "./products/rnipl-1178-on.jpeg",
     description: 'Energy-efficient LED street lighting designed for optimal visibility and safety on roadways and pathways.',
     features: ['Aluminium frame', 'Thermal management fins', 'Stainless hardware', 'IK08 impact resistant', 'Auto restart after safe volatge mode', 'Compact and aesthestic design',],
     enquiryEnabled: true,
@@ -835,10 +765,9 @@ export const PRODUCTS: Product[] = [
     id: '33',
     name: 'Architectural Lighting Poles',
     category: 'Poles',
+    subCategory: 'Poles',
     wattage: '100W',
     image: "./products/rnipl-1129.png",
-    onImage: "./products/rnipl-1129.png",
-    offImage: "./products/rnipl-1129.png",
     description: 'Energy-efficient LED street lighting designed for optimal visibility and safety on roadways and pathways.',
     features: ['Aluminium frame', 'Thermal management fins', 'Stainless hardware', 'IK08 impact resistant', 'Auto restart after safe volatge mode', 'Compact and aesthestic design',],
     enquiryEnabled: true,
@@ -862,76 +791,13 @@ export const PRODUCTS: Product[] = [
     ],
     document: "./products/rnipl-1129.png",
   },
-  // {
-  //   id: '34',
-  //   name: 'Architectural Lighting Poles',
-  //   category: 'Poles',
-  //   wattage: '100W',
-  //   image: "./products/rnipl-1130.jpg",
-  //   onImage: "./products/rnipl-1130.jpg",
-  //   offImage: "./products/rnipl-1130.jpg",
-  //   description: 'Energy-efficient LED street lighting designed for optimal visibility and safety on roadways and pathways.',
-  //   features: ['Aluminium frame', 'Thermal management fins', 'Stainless hardware', 'IK08 impact resistant', 'Auto restart after safe volatge mode', 'Compact and aesthestic design',],
-  //   enquiryEnabled: true,
-  //   specs: [
-  //     {
-  //       label: "Code",
-  //       value: "RNIPL-1130"
-  //     },
-  //     {
-  //       label: "Dimension",
-  //       value: "Ø 254 X 120 mm"
-  //     },
-  //     {
-  //       label: "Power",
-  //       value: "100 Watt"
-  //     },
-  //     {
-  //       label: "Warranty",
-  //       value: "2 Years"
-  //     }
-  //   ],
-  //   document: "./products/rnipl-1130.jpg",
-  // },
-  // {
-  //   id: '35',
-  //   name: 'Stadium Lighting Poles',
-  //   category: 'Poles',
-  //   wattage: '100W',
-  //   image: "./products/rnipl-1128.png",
-  //   onImage: "./products/rnipl-1128.jpg",
-  //   offImage: "./products/rnipl-1128.jpg",
-  //   description: 'Energy-efficient LED street lighting designed for optimal visibility and safety on roadways and pathways.',
-  //   features: ['Aluminium frame', 'Thermal management fins', 'Stainless hardware', 'IK08 impact resistant', 'Auto restart after safe volatge mode', 'Compact and aesthestic design',],
-  //   enquiryEnabled: true,
-  //   specs: [
-  //     {
-  //       label: "Code",
-  //       value: "RNIPL-1128"
-  //     },
-  //     {
-  //       label: "Dimension",
-  //       value: "Ø 254 X 120 mm"
-  //     },
-  //     {
-  //       label: "Power",
-  //       value: "100 Watt"
-  //     },
-  //     {
-  //       label: "Warranty",
-  //       value: "2 Years"
-  //     }
-  //   ],
-  //   document: "./products/rnipl-1128.png",
-  // },
   {
     id: '21',
     name: '150 W Badminton Court Light',
-    category: 'Indoor Sports Light Housing',
+    category: 'Indoor',
+    subCategory: 'Indoor Sports Light Housing',
     wattage: '150W',
     image: "./products/rnipl-6150.jpeg",
-    onImage: "./products/rnipl-6150.jpeg",
-    offImage: "./products/rnipl-6150.jpeg",
     description: 'Classic dome-style Indoor sports light housing delivering uniform illumination for badminton court.',
     features: ['Polycarbonate dome', 'IP65 rated', 'Excellent heat dissipation', 'Hook & chain mount'],
     enquiryEnabled: true,
@@ -946,11 +812,10 @@ export const PRODUCTS: Product[] = [
   {
     id: '25',
     name: '50 W High Bay Eco Spiral',
-    category: 'High Bay Light Housing',
+    category: 'Indoor',
+    subCategory: 'High Bay Light Housing',
     wattage: '50W',
     image: "./products/rnipl-2550.jpeg",
-    onImage: "./products/rnipl-2550.jpeg",
-    offImage: "./products/rnipl-2550.jpeg",
     description: 'Classic dome-style high bay housing delivering uniform illumination for large spaces.',
     features: ['Polycarbonate dome', 'IP65 rated', 'Excellent heat dissipation', 'Optical lens with silicon'],
     enquiryEnabled: true,
@@ -970,6 +835,257 @@ export const PRODUCTS: Product[] = [
       { label: "Overall Dim", value: "Ø 146 X 89 mm" },
     ],
     document: "./document/RNIPL-02550.pdf",
+  },
+  {
+    id: '22',
+    name: '50 W Linear Light',
+    category: 'Indoor',
+    subCategory: 'Linear Light',
+    wattage: '100W',
+    image: "./products/rnipl-6100.png",
+    description: 'Classic dome-style Linear Light delivering uniform illumination for tables and office spaces.',
+    features: ['Polycarbonate dome', 'IP20 rated', 'Excellent heat dissipation', 'Hook & chain mount'],
+    enquiryEnabled: true,
+    specs: [
+      { label: "Code", value: "RNIPL-6100" },
+      { label: "Power", value: "50 WATT" },
+      { label: "Warranty", value: "2 YEAR" },
+      { label: "Length", value: "4 feet" },
+      { label: "Suspension", value: "Included" },
+    ],
+    document: "./document/RNIPL-6100.pdf",
+  },
+  {
+    id: '34',
+    name: 'Aluminium Lighting Poles',
+    category: 'Poles',
+    subCategory: 'Aluminium Lighting Poles',
+    wattage: '20W',
+    image: "./products/rnipl-501.png",
+    description: 'Energy-efficient LED street lighting designed for optimal visibility and safety on roadways and pathways.',
+    features: ['Aluminium frame', 'Thermal management fins', 'Stainless hardware', 'IK08 impact resistant', 'Auto restart after safe volatge mode', 'Compact and aesthestic design',],
+    enquiryEnabled: true,
+    specs: [
+      {
+        label: "Code",
+        value: "RNIPL-501"
+      },
+      {
+        label: "Power",
+        value: "20 Watt"
+      },
+      {
+        label: "Height (mm)",
+        value: "3000-5000"
+      },
+      {
+        label: "Warranty",
+        value: "2 Years"
+      }
+    ],
+    document: "./document/RNIPL-Aluminium-Lighting-Poles.pdf",
+  },
+  {
+    id: '35',
+    name: 'Aluminium Lighting Poles',
+    category: 'Poles',
+    subCategory: 'Aluminium Lighting Poles',
+    wattage: '40W',
+    image: "./products/rnipl-502.png",
+    description: 'Energy-efficient LED street lighting designed for optimal visibility and safety on roadways and pathways.',
+    features: ['Aluminium frame', 'Thermal management fins', 'Stainless hardware', 'IK08 impact resistant', 'Auto restart after safe volatge mode', 'Compact and aesthestic design',],
+    enquiryEnabled: true,
+    specs: [
+      {
+        label: "Code",
+        value: "RNIPL-502"
+      },
+      {
+        label: "Power",
+        value: "40 Watt"
+      },
+      {
+        label: "Warranty",
+        value: "2 Years"
+      }
+    ],
+    document: "./document/RNIPL-Aluminium-Lighting-Poles.pdf",
+  },
+  {
+    id: '36',
+    name: 'Aluminium Lighting Poles',
+    category: 'Poles',
+    subCategory: 'Aluminium Lighting Poles',
+    wattage: '30W, 45W',
+    image: "./products/rnipl-503.png",
+    description: 'Energy-efficient LED street lighting designed for optimal visibility and safety on roadways and pathways.',
+    features: ['Aluminium frame', 'Thermal management fins', 'Stainless hardware', 'IK08 impact resistant', 'Auto restart after safe volatge mode', 'Compact and aesthestic design',],
+    enquiryEnabled: true,
+    specs: [
+      {
+        label: "Code",
+        value: "RNIPL-503"
+      },
+      {
+        label: "Power",
+        value: "30, 45 Watt"
+      },
+      {
+        label: "Height (mm)",
+        value: "4000"
+      },
+      {
+        label: "Warranty",
+        value: "2 Years"
+      }
+    ],
+    document: "./document/RNIPL-Aluminium-Lighting-Poles.pdf",
+  },
+  {
+    id: '37',
+    name: 'Aluminium Lighting Poles',
+    category: 'Poles',
+    subCategory: 'Aluminium Lighting Poles',
+    wattage: '20W',
+    image: "./products/rnipl-504.png",
+    description: 'Energy-efficient LED street lighting designed for optimal visibility and safety on roadways and pathways.',
+    features: ['Aluminium frame', 'Thermal management fins', 'Stainless hardware', 'IK08 impact resistant', 'Auto restart after safe volatge mode', 'Compact and aesthestic design',],
+    enquiryEnabled: true,
+    specs: [
+      {
+        label: "Code",
+        value: "RNIPL-504"
+      },
+      {
+        label: "Power",
+        value: "20 Watt"
+      },
+      {
+        label: "Height (mm)",
+        value: "3000-5000"
+      },
+      {
+        label: "Warranty",
+        value: "2 Years"
+      }
+    ],
+    document: "./document/RNIPL-Aluminium-Lighting-Poles.pdf",
+  },
+  {
+    id: '38',
+    name: 'Aluminium Lighting Poles',
+    category: 'Poles',
+    subCategory: 'Aluminium Lighting Poles',
+    wattage: '20W',
+    image: "./products/rnipl-505.png",
+    description: 'Energy-efficient LED street lighting designed for optimal visibility and safety on roadways and pathways.',
+    features: ['Aluminium frame', 'Thermal management fins', 'Stainless hardware', 'IK08 impact resistant', 'Auto restart after safe volatge mode', 'Compact and aesthestic design',],
+    enquiryEnabled: true,
+    specs: [
+      {
+        label: "Code",
+        value: "RNIPL-505"
+      },
+      {
+        label: "Power",
+        value: "20 Watt"
+      },
+      {
+        label: "Warranty",
+        value: "2 Years"
+      }
+    ],
+    document: "./document/RNIPL-Aluminium-Lighting-Poles.pdf",
+  },
+  {
+    id: '39',
+    name: 'Aluminium Lighting Poles',
+    category: 'Poles',
+    subCategory: 'Aluminium Lighting Poles',
+    wattage: '30W',
+    image: "./products/rnipl-506.png",
+    description: 'Energy-efficient LED street lighting designed for optimal visibility and safety on roadways and pathways.',
+    features: ['Aluminium frame', 'Thermal management fins', 'Stainless hardware', 'IK08 impact resistant', 'Auto restart after safe volatge mode', 'Compact and aesthestic design',],
+    enquiryEnabled: true,
+    specs: [
+      {
+        label: "Code",
+        value: "RNIPL-506"
+      },
+      {
+        label: "Power",
+        value: "30 Watt"
+      },
+      {
+        label: "Height (mm)",
+        value: "3000, 4000"
+      },
+      {
+        label: "Warranty",
+        value: "2 Years"
+      }
+    ],
+    document: "./document/RNIPL-Aluminium-Lighting-Poles.pdf",
+  },
+  {
+    id: '40',
+    name: 'Aluminium Lighting Poles',
+    category: 'Poles',
+    subCategory: 'Aluminium Lighting Poles',
+    wattage: '30W, 45W',
+    image: "./products/rnipl-507.png",
+    description: 'Energy-efficient LED street lighting designed for optimal visibility and safety on roadways and pathways.',
+    features: ['Aluminium frame', 'Thermal management fins', 'Stainless hardware', 'IK08 impact resistant', 'Auto restart after safe volatge mode', 'Compact and aesthestic design',],
+    enquiryEnabled: true,
+    specs: [
+      {
+        label: "Code",
+        value: "RNIPL-507"
+      },
+      {
+        label: "Power",
+        value: "30, 45 Watt"
+      },
+      {
+        label: "Height (mm)",
+        value: "3000, 4000, 5000"
+      },
+      {
+        label: "Warranty",
+        value: "2 Years"
+      }
+    ],
+    document: "./document/RNIPL-Aluminium-Lighting-Poles.pdf",
+  },
+  {
+    id: '41',
+    name: 'Aluminium Lighting Poles',
+    category: 'Poles',
+    subCategory: 'Aluminium Lighting Poles',
+    wattage: '45W, 90W',
+    image: "./products/rnipl-508.png",
+    description: 'Energy-efficient LED street lighting designed for optimal visibility and safety on roadways and pathways.',
+    features: ['Aluminium frame', 'Thermal management fins', 'Stainless hardware', 'IK08 impact resistant', 'Auto restart after safe volatge mode', 'Compact and aesthestic design',],
+    enquiryEnabled: true,
+    specs: [
+      {
+        label: "Code",
+        value: "RNIPL-508"
+      },
+      {
+        label: "Power",
+        value: "45, 90 Watt"
+      },
+      {
+        label: "Height (mm)",
+        value: "4000, 5000, 6000"
+      },
+      {
+        label: "Warranty",
+        value: "2 Years"
+      }
+    ],
+    document: "./document/RNIPL-Aluminium-Lighting-Poles.pdf",
   },
 ]
 

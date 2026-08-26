@@ -6,14 +6,9 @@ import { useParams } from 'react-router-dom'
 
 const ALL_CATEGORIES: (ProductCategory | 'All')[] = [
   'All',
-  'High Bay Light Housing',
-  'Street Light Housing',
-  'Poles',
-  'Flood Light Housing',
-  'Indoor Sports Light Housing',
-  'Linear Light',
-  'Panel Lights',
-  'Inspection Lamp',
+  'Indoor',
+  'Outdoor',
+  'Poles'
 ]
 
 export default function ProductsPage() {
@@ -63,7 +58,7 @@ export default function ProductsPage() {
 
       <div className="max-w-7xl mx-auto px-4 py-16">
         {/* Category filter */}
-        <div className="flex flex-wrap gap-2 mb-10 justify-center">
+        <div className="flex flex-wrap gap-2 mb-10 justify-end">
           {ALL_CATEGORIES.map((cat) => (
             <button
               key={cat}
