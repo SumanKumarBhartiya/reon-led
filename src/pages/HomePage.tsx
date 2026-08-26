@@ -1,13 +1,13 @@
 import { Link } from 'react-router-dom'
 import { ArrowRight, ChevronDown } from 'lucide-react'
-import { PRODUCTS, STATS, WHY_CHOOSE_US } from '../data'
+import { STATS, WHY_CHOOSE_US, FeaturedProducts } from '../data'
 import { COMPANY } from '../types'
 import { SectionHeader, Button } from '../components/ui'
 import ProductCardHomePage from '../components/ui/ProductCardHomePage'
 import EnquiryForm from '../components/ui/EnquiryForm'
 
 export default function HomePage() {
-  const featuredProducts = PRODUCTS.slice(0, 6)
+  const featuredProducts = FeaturedProducts
 
   return (
     <>

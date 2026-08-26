@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom'
 // import { ArrowRight, Zap } from 'lucide-react'
-import type { Product } from '../../types'
+import type { featuredProduct } from '../../types'
 // import { Badge } from '../ui'
 import { useState } from 'react'
 
 interface ProductCardProps {
-  product: Product
+  product: featuredProduct
   showEnquiry?: boolean
 }
 

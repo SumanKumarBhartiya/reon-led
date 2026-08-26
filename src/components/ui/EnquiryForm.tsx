@@ -127,7 +127,7 @@ export default function EnquiryForm({ preselectedProduct, compact = false }: Enq
         >
           <option value="">Select a product…</option>
           {PRODUCTS.map((p) => (
-            <option key={p.id} value={p.name}>{p.name}</option>
+            <option key={p.id} value={p.name}>{p.name} - {p.wattage}</option>
           ))}
           <option value="General Enquiry">General Enquiry</option>
         </select>
