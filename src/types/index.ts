@@ -63,6 +63,7 @@ export type ProductSubCategory =
   | 'Panel Lights'
   | 'Inspection Lamp'
   | 'Aluminium Lighting Poles'
+  | 'Stadium Lights'
 
 // ─── Navigation Types ──────────────────────────────────────────────────────────
 export interface NavItem {

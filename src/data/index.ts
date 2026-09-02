@@ -27,33 +27,45 @@ export const FeaturedProducts: featuredProduct[] = [
   },
   {
     id: "2",
-    category: "Outdoor",
-    onImage: "./products/rnipl-0072-on1.jpg",
-    offImage: "./products/rnipl-0072-off1.png",
-  },
-  {
-    id: "3",
     category: "Indoor",
     onImage: "./products/rnipl-0231-on.jpg",
     offImage: "./products/rnipl-0231-off.png",
   },
   {
-    id: "4",
-    category: "Poles",
-    onImage: "./products/rnipl-1170-on.jpg",
-    offImage: "./products/rnipl-1170-off.png",
-  },
-  {
-    id: "5",
+    id: "3",
     category: "Indoor",
     onImage: "./products/rnipl-6149-on.jpg",
     offImage: "./products/rnipl-6149-off.jpg",
   },
   {
-    id: "6",
+    id: "4",
     category: "Indoor",
     onImage: "./products/rnipl-61888-on.jpg",
     offImage: "./products/rnipl-61888-off.jpg",
+  },
+  {
+    id: "5",
+    category: "Outdoor",
+    onImage: "./products/rnipl-0072-on1.jpg",
+    offImage: "./products/rnipl-0072-off1.png",
+  },
+  {
+    id: "6",
+    category: "Outdoor",
+    onImage: "./products/pole-mounted-on.jpg",
+    offImage: "./products/pole-mounted-off.jpg",
+  },
+  {
+    id: "7",
+    category: "Poles",
+    onImage: "./products/rnipl-1170-on.jpg",
+    offImage: "./products/rnipl-1170-off.jpg",
+  },
+  {
+    id: "8",
+    category: "Poles",
+    onImage: "./products/rnipl-1100-on.jpg",
+    offImage: "./products/rnipl-1100-off.jpg",
   },
 ]
 
@@ -448,6 +460,32 @@ export const PRODUCTS: Product[] = [
     document: "./document/RNIPL-02552.pdf",
   },
   {
+    id: '30',
+    name: '36 W Outdoor Light',
+    category: 'Outdoor',
+    subCategory: 'Poles',
+    wattage: '36W',
+    image: "./products/rnipl-253081.jpg",
+    description: 'Energy-efficient LED street lighting designed for optimal visibility and safety on roadways and pathways.',
+    features: ['Aluminium frame', 'Thermal management fins', 'Stainless hardware', 'IK08 impact resistant', 'Auto restart after safe volatge mode', 'Compact and aesthestic design',],
+    enquiryEnabled: true,
+    specs: [
+      {
+        label: "Code",
+        value: "RNIPL-253081"
+      },
+      {
+        label: "Power",
+        value: "36 Watt"
+      },
+      {
+        label: "Warranty",
+        value: "2 Years"
+      }
+    ],
+    document: "./document/RNIPL-253081.pdf",
+  },
+  {
     id: '10',
     name: '50 W Pro Lens Flood Light',
     category: 'Outdoor',
@@ -729,7 +767,7 @@ export const PRODUCTS: Product[] = [
         value: "2 Years"
       }
     ],
-    document: "./products/rnipl-1109.png",
+    document: "./document/RNIPL-Aluminium-Lighting-Poles.pdf",
   },
   {
     id: '32',
@@ -759,7 +797,7 @@ export const PRODUCTS: Product[] = [
         value: "2 Years"
       }
     ],
-    document: "./products/rnipl-1178.jpg",
+    document: "./document/RNIPL-Aluminium-Lighting-Poles.pdf",
   },
   {
     id: '33',
@@ -789,7 +827,7 @@ export const PRODUCTS: Product[] = [
         value: "2 Years"
       }
     ],
-    document: "./products/rnipl-1129.png",
+    document: "./document/RNIPL-Aluminium-Lighting-Poles.pdf",
   },
   {
     id: '21',
@@ -1086,6 +1124,246 @@ export const PRODUCTS: Product[] = [
       }
     ],
     document: "./document/RNIPL-Aluminium-Lighting-Poles.pdf",
+  },
+  {
+    id: '42',
+    name: '60W Pro Lens Stadium Light',
+    category: 'Poles',
+    subCategory: 'Stadium Lights',
+    wattage: '60W',
+    image: "./products/rnipl-00501.jpeg",
+    description: 'Energy-efficient LED street lighting designed for optimal visibility and safety in Stadium',
+    features: ['Optical lens with silicon', 'Thermal management fins', 'Stainless hardware', 'High effeciency long life led', 'High voltage withstand capacity', 'Auto restart after safe volatge mode',],
+    enquiryEnabled: true,
+    specs: [
+      {
+        label: "Code",
+        value: "RNIPL-00501"
+      },
+      {
+        label: "Power",
+        value: "60 Watt"
+      },
+      {
+        label: "Weight (gm)",
+        value: "1380"
+      },
+      {
+        label: "Warranty",
+        value: "2 Years"
+      }
+    ],
+    document: "./document/RNIPL-00501.pdf",
+  },
+  {
+    id: '43',
+    name: '120W Pro Lens Stadium Light',
+    category: 'Poles',
+    subCategory: 'Stadium Lights',
+    wattage: '120W',
+    image: "./products/rnipl-00502.jpeg",
+    description: 'Energy-efficient LED street lighting designed for optimal visibility and safety in Stadium',
+    features: ['Optical lens with silicon', 'Thermal management fins', 'Stainless hardware', 'High effeciency long life led', 'High voltage withstand capacity', 'Auto restart after safe volatge mode',],
+    enquiryEnabled: true,
+    specs: [
+      {
+        label: "Code",
+        value: "RNIPL-00502"
+      },
+      {
+        label: "Power",
+        value: "120 Watt"
+      },
+      {
+        label: "Weight (gm)",
+        value: "2450"
+      },
+      {
+        label: "Warranty",
+        value: "2 Years"
+      }
+    ],
+    document: "./document/RNIPL-00502.pdf",
+  },
+  {
+    id: '44',
+    name: '180W Pro Lens Stadium Light',
+    category: 'Poles',
+    subCategory: 'Stadium Lights',
+    wattage: '180W',
+    image: "./products/rnipl-00503.jpeg",
+    description: 'Energy-efficient LED street lighting designed for optimal visibility and safety in Stadium',
+    features: ['Optical lens with silicon', 'Thermal management fins', 'Stainless hardware', 'High effeciency long life led', 'High voltage withstand capacity', 'Auto restart after safe volatge mode',],
+    enquiryEnabled: true,
+    specs: [
+      {
+        label: "Code",
+        value: "RNIPL-00503"
+      },
+      {
+        label: "Power",
+        value: "180 Watt"
+      },
+      {
+        label: "Weight (gm)",
+        value: "3800"
+      },
+      {
+        label: "Warranty",
+        value: "2 Years"
+      }
+    ],
+    document: "./document/RNIPL-00503.pdf",
+  },
+  {
+    id: '45',
+    name: '120W Pro Series Stadium Light',
+    category: 'Poles',
+    subCategory: 'Stadium Lights',
+    wattage: '120W',
+    image: "./products/rnipl-5033.jpeg",
+    description: 'Energy-efficient LED street lighting designed for optimal visibility and safety in Stadium',
+    features: ['Optical lens with silicon', 'Thermal management fins', 'Stainless hardware', 'High effeciency long life led', 'High voltage withstand capacity', 'Auto restart after safe volatge mode',],
+    enquiryEnabled: true,
+    specs: [
+      {
+        label: "Code",
+        value: "RNIPL-5033"
+      },
+      {
+        label: "Power",
+        value: "120 Watt"
+      },
+      {
+        label: "Weight (gm)",
+        value: "2100"
+      },
+      {
+        label: "Warranty",
+        value: "2 Years"
+      }
+    ],
+    document: "./document/RNIPL-5033.pdf",
+  },
+  {
+    id: '46',
+    name: '250W Pro Series Stadium Light',
+    category: 'Poles',
+    subCategory: 'Stadium Lights',
+    wattage: '250W',
+    image: "./products/rnipl-5034.jpeg",
+    description: 'Energy-efficient LED street lighting designed for optimal visibility and safety in Stadium',
+    features: ['Optical lens with silicon', 'Thermal management fins', 'Stainless hardware', 'High effeciency long life led', 'High voltage withstand capacity', 'Auto restart after safe volatge mode',],
+    enquiryEnabled: true,
+    specs: [
+      {
+        label: "Code",
+        value: "RNIPL-5034"
+      },
+      {
+        label: "Power",
+        value: "250 Watt"
+      },
+      {
+        label: "Weight (gm)",
+        value: "3600"
+      },
+      {
+        label: "Warranty",
+        value: "2 Years"
+      }
+    ],
+    document: "./document/RNIPL-5034.pdf",
+  },
+  {
+    id: '47',
+    name: '350W Pro Series Stadium Light',
+    category: 'Poles',
+    subCategory: 'Stadium Lights',
+    wattage: '350W',
+    image: "./products/rnipl-5035.jpeg",
+    description: 'Energy-efficient LED street lighting designed for optimal visibility and safety in Stadium',
+    features: ['Optical lens with silicon', 'Thermal management fins', 'Stainless hardware', 'High effeciency long life led', 'High voltage withstand capacity', 'Auto restart after safe volatge mode',],
+    enquiryEnabled: true,
+    specs: [
+      {
+        label: "Code",
+        value: "RNIPL-5035"
+      },
+      {
+        label: "Power",
+        value: "350 Watt"
+      },
+      {
+        label: "Weight (gm)",
+        value: "5800"
+      },
+      {
+        label: "Warranty",
+        value: "2 Years"
+      }
+    ],
+    document: "./document/RNIPL-5035.pdf",
+  },
+  {
+    id: '48',
+    name: '500W Pro Series Stadium Light',
+    category: 'Poles',
+    subCategory: 'Stadium Lights',
+    wattage: '500W',
+    image: "./products/rnipl-5036.jpeg",
+    description: 'Energy-efficient LED street lighting designed for optimal visibility and safety in Stadium',
+    features: ['Optical lens with silicon', 'Thermal management fins', 'Stainless hardware', 'High effeciency long life led', 'High voltage withstand capacity', 'Auto restart after safe volatge mode',],
+    enquiryEnabled: true,
+    specs: [
+      {
+        label: "Code",
+        value: "RNIPL-5036"
+      },
+      {
+        label: "Power",
+        value: "500 Watt"
+      },
+      {
+        label: "Weight (gm)",
+        value: "8300"
+      },
+      {
+        label: "Warranty",
+        value: "2 Years"
+      }
+    ],
+    document: "./document/RNIPL-5036.pdf",
+  },
+  {
+    id: '49',
+    name: '1000W Pro Series Stadium Light',
+    category: 'Poles',
+    subCategory: 'Stadium Lights',
+    wattage: '1000W',
+    image: "./products/rnipl-5039.jpeg",
+    description: 'Energy-efficient LED street lighting designed for optimal visibility and safety in Stadium',
+    features: ['Optical lens with silicon', 'Thermal management fins', 'Stainless hardware', 'High effeciency long life led', 'High voltage withstand capacity', 'Auto restart after safe volatge mode',],
+    enquiryEnabled: true,
+    specs: [
+      {
+        label: "Code",
+        value: "RNIPL-5039"
+      },
+      {
+        label: "Power",
+        value: "1000 Watt"
+      },
+      {
+        label: "Weight (gm)",
+        value: "16700"
+      },
+      {
+        label: "Warranty",
+        value: "2 Years"
+      }
+    ],
+    document: "./document/RNIPL-5039.pdf",
   },
 ]
 
