@@ -94,7 +94,7 @@ export default function HomePage() {
             title="Premium LED Lighting Solutions"
             subtitle="From street light housings to finish goods — precision-engineered for performance and longevity."
           />
-          <div className="min-h-200 grid grid-cols-1 sm:grid-cols-4 lg:grid-cols-4 gap-6">
+          <div className="min-h-200 grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-6">
             {featuredProducts.map((product) => (
               <ProductCardHomePage key={product.id} product={product} />
             ))}

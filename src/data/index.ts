@@ -13,7 +13,7 @@ export const NAV_ITEMS: NavItem[] = [
     //   { label: 'Linear Lights', path: '/products/linear-light' },
     // ],
   },
-  { label: 'Projects', path: '/projects' },
+  // { label: 'Projects', path: '/projects' },
   { label: 'About Us', path: '/about' },
   { label: 'Contact', path: '/contact' },
 ]
@@ -21,6 +21,7 @@ export const NAV_ITEMS: NavItem[] = [
 export const FeaturedProducts: featuredProduct[] = [
   {
     id: "1",
+    title: "Linear Light",
     subCategory: "Indoor",
     category: "Linear Light",
     onImage: "./products/rnipl-6100-on.jpg",
@@ -28,6 +29,7 @@ export const FeaturedProducts: featuredProduct[] = [
   },
   {
     id: "2",
+    title: "Industrial High Bay",
     subCategory: "Indoor",
     category: "High Bay Light Housing",
     onImage: "./products/rnipl-0231-on.jpg",
@@ -35,6 +37,7 @@ export const FeaturedProducts: featuredProduct[] = [
   },
   {
     id: "3",
+    title: "Sport Badminton",
     subCategory: "Indoor",
     category: "Indoor Sports Light Housing",
     onImage: "./products/rnipl-6149-on.jpg",
@@ -42,20 +45,23 @@ export const FeaturedProducts: featuredProduct[] = [
   },
   {
     id: "4",
+    title: "Square Panel Light",
     subCategory: "Indoor",
     category: "Panel Lights",
-    onImage: "./products/rnipl-61888-on.jpg",
-    offImage: "./products/rnipl-61888-off.jpg",
+    onImage: "./products/panel-lights-on.jpg",
+    offImage: "./products/panel-lights-off.jpg",
   },
   {
     id: "5",
+    title: "Industrial Flood Light",
     subCategory: "Outdoor",
-    category: "High Bay Light Housing",
+    category: "Flood Light Housing",
     onImage: "./products/rnipl-0072-on1.jpg",
     offImage: "./products/rnipl-0072-off1.png",
   },
   {
     id: "6",
+    title: "Garden Ring Pole",
     subCategory: "Outdoor",
     category: "Pole Lighting",
     onImage: "./products/pole-mounted-on.jpg",
@@ -63,6 +69,7 @@ export const FeaturedProducts: featuredProduct[] = [
   },
   {
     id: "7",
+    title: "High Mast Pole",
     subCategory: "Poles",
     category: "Aluminium Lighting Poles",
     onImage: "./products/rnipl-1170-on.jpg",
@@ -70,10 +77,19 @@ export const FeaturedProducts: featuredProduct[] = [
   },
   {
     id: "8",
+    title: "Street Light",
     subCategory: "Poles",
     category: "Pole Lighting",
     onImage: "./products/rnipl-1100-on.jpg",
     offImage: "./products/rnipl-1100-off.jpg",
+  },
+  {
+    id: "9",
+    title: "Stadium Light",
+    subCategory: "Poles",
+    category: "Stadium Lights",
+    onImage: "./products/stadium-light-on.jpg",
+    offImage: "./products/stadium-light-off.jpg",
   },
 ]
 

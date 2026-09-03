@@ -4,7 +4,7 @@ export const COMPANY = {
   shortName: 'Reon LED',
   tagline: "Illuminating Tomorrow's World",
   description:
-    'Premium manufacturer of LED lighting solutions — street lights, flood lights, high bay lights and industrial luminaires based out of Hosur, Tamil Nadu.',
+    'Premium manufacturer of LED lighting solutions — street lights, flood lights, high bay lights, stadium lights, square panel lights and industrial luminaires based out of Hosur, Tamil Nadu.',
   address: {
     line1: 'No 25/1 Appavu Nagar Extension,',
     line2: 'Opp. Chennish Mahal, Thalli Road,',
@@ -29,6 +29,7 @@ export interface Specification {
 
 export interface featuredProduct {
   id: string
+  title: string
   category: ProductCategory
   subCategory: ProductSubCategory
   onImage?: string
