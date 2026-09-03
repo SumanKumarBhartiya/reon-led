@@ -30,6 +30,7 @@ export interface Specification {
 export interface featuredProduct {
   id: string
   category: ProductCategory
+  subCategory: ProductSubCategory
   onImage?: string
   offImage?: string
 }
@@ -48,14 +49,14 @@ export interface Product {
   document: string,
 }
 
-export type ProductCategory =
+export type ProductSubCategory =
   | 'Indoor'
   | 'Outdoor'
   | 'Poles'
 
-export type ProductSubCategory =
+export type ProductCategory =
   | 'Street Light Housing'
-  | 'Poles'
+  | 'Pole Lighting'
   | 'Flood Light Housing'
   | 'High Bay Light Housing'
   | 'Indoor Sports Light Housing'
