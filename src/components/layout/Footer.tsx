@@ -58,9 +58,16 @@ export default function Footer() {
           <h4 className="font-heading text-white font-semibold text-lg mb-5">Our Products</h4>
           <ul className="space-y-2.5">
             {[
-              'Indoor',
-              'Outdoor',
-              'Poles',
+              'Street Light Housing',
+              'Pole Lighting',
+              'Flood Light Housing',
+              'High Bay Light Housing',
+              'Indoor Sports Light Housing',
+              'Linear Light',
+              'Panel Lights',
+              'Inspection Lamp',
+              'Aluminium Lighting Poles',
+              'Stadium Lights',
               // 'Well Glass Light Housing',
               // 'Finish Goods',
               // 'PCB',

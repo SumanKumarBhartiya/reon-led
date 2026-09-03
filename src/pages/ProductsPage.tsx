@@ -6,9 +6,16 @@ import { useParams } from 'react-router-dom'
 
 const ALL_CATEGORIES: (ProductCategory | 'All')[] = [
   'All',
-  'Indoor',
-  'Outdoor',
-  'Poles'
+  'Street Light Housing',
+  'Pole Lighting',
+  'Flood Light Housing',
+  'High Bay Light Housing',
+  'Indoor Sports Light Housing',
+  'Linear Light',
+  'Panel Lights',
+  'Inspection Lamp',
+  'Aluminium Lighting Poles',
+  'Stadium Lights',
 ]
 
 export default function ProductsPage() {
@@ -58,19 +65,18 @@ export default function ProductsPage() {
 
       <div className="max-w-7xl mx-auto px-4 py-16">
         {/* Category filter */}
-        <div className="flex flex-wrap gap-2 mb-10 justify-end">
-          {ALL_CATEGORIES.map((cat) => (
-            <button
-              key={cat}
-              onClick={() => setActive(cat)}
-              className={`px-5 py-2 font-body text-sm font-semibold transition-all duration-200 border ${active === cat
-                ? 'bg-brand-gold text-white border-brand-gold'
-                : 'bg-white text-brand-navy border-gray-200 hover:border-brand-gold hover:text-brand-gold'
-                }`}
-            >
-              {cat}
-            </button>
-          ))}
+        <div className="mb-10 flex justify-center">
+          <select
+            value={active}
+            onChange={(e) => setActive(e.target.value as ProductCategory | 'All')}
+            className="px-5 py-2 font-body text-sm font-semibold border border-gray-200 bg-white text-brand-navy transition-all duration-200 focus:outline-none cursor-pointer"
+          >
+            {ALL_CATEGORIES.map((cat) => (
+              <option key={cat} value={cat}>
+                {cat}
+              </option>
+            ))}
+          </select>
         </div>
 
         {/* Count */}
