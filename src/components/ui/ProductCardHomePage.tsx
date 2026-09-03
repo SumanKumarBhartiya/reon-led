@@ -13,7 +13,7 @@ export default function ProductCardHomePage({ product }: ProductCardProps) {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <Link title={product.subCategory} to={`/products/${product.category.toLowerCase().replace(/ /g, '-')}`} state={{ product }} className='flex-1'>
+    <Link title={product.title} to={`/products/${product.category.toLowerCase().replace(/ /g, '-')}`} state={{ product }} className='flex-1'>
 
       <div className="bg-white border border-gray-100 shadow-sm transition-all duration-300 flex flex-col"
         onMouseEnter={() => setIsHovered(true)}
