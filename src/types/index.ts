@@ -56,16 +56,19 @@ export type ProductSubCategory =
   | 'Poles'
 
 export type ProductCategory =
-  | 'Street Light Housing'
-  | 'Pole Lighting'
-  | 'Flood Light Housing'
-  | 'High Bay Light Housing'
-  | 'Indoor Sports Light Housing'
-  | 'Linear Light'
   | 'Panel Lights'
-  | 'Inspection Lamp'
-  | 'Aluminium Lighting Poles'
+  | 'Linear Light'
+  | 'Column Light'
+  | 'Pole Lighting'
   | 'Stadium Lights'
+  | 'Inspection Lamp'
+  | 'Decorative Bracket'
+  | 'Flood Light Housing'
+  | 'Street Light Housing'
+  | 'Square Lighting Poles'
+  | 'High Bay Light Housing'
+  | 'Aluminium Lighting Poles'
+  | 'Indoor Sports Light Housing'
 
 // ─── Navigation Types ──────────────────────────────────────────────────────────
 export interface NavItem {
