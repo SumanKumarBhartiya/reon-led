@@ -91,6 +91,30 @@ export const FeaturedProducts: featuredProduct[] = [
     onImage: "./products/stadium-light-on.jpg",
     offImage: "./products/stadium-light-off.jpg",
   },
+  {
+    id: "10",
+    title: "Column Light",
+    subCategory: "Poles",
+    category: "Column Light",
+    onImage: "./products/column_light_on.jpg",
+    offImage: "./products/column_light_off.jpg",
+  },
+  {
+    id: "11",
+    title: "Decorative Bracket",
+    subCategory: "Poles",
+    category: "Decorative Bracket",
+    onImage: "./products/decorative_bracket_on.jpg",
+    offImage: "./products/decorative_bracket_off.jpg",
+  },
+  {
+    id: "9",
+    title: "Square Lighting Poles",
+    subCategory: "Poles",
+    category: "Square Lighting Poles",
+    onImage: "./products/square_lighting_poles.jpg",
+    offImage: "./products/square_lighting_poles_off.jpg",
+  },
 ]
 
 export const PRODUCTS: Product[] = [
@@ -153,9 +177,9 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: '29',
-    name: 'Aluminium Lighting Poles',
+    name: 'Rectra Polar Pole Series',
     subCategory: 'Poles',
-    category: 'Pole Lighting',
+    category: 'Square Lighting Poles',
     wattage: '100W',
     image: "./products/rnipl-1127.jpg",
     description: 'Energy-efficient LED street lighting designed for optimal visibility and safety on roadways and pathways.',
@@ -1061,9 +1085,9 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: '39',
-    name: 'Aluminium Lighting Poles',
+    name: 'Rectra Polar Pole Series',
     subCategory: 'Poles',
-    category: 'Aluminium Lighting Poles',
+    category: 'Square Lighting Poles',
     wattage: '30W',
     image: "./products/rnipl-506.png",
     description: 'Energy-efficient LED street lighting designed for optimal visibility and safety on roadways and pathways.',
@@ -1093,7 +1117,7 @@ export const PRODUCTS: Product[] = [
     id: '40',
     name: 'Aluminium Lighting Poles',
     subCategory: 'Poles',
-    category: 'Aluminium Lighting Poles',
+    category: 'Square Lighting Poles',
     wattage: '30W, 45W',
     image: "./products/rnipl-507.png",
     description: 'Energy-efficient LED street lighting designed for optimal visibility and safety on roadways and pathways.',
@@ -1123,7 +1147,7 @@ export const PRODUCTS: Product[] = [
     id: '41',
     name: 'Aluminium Lighting Poles',
     subCategory: 'Poles',
-    category: 'Aluminium Lighting Poles',
+    category: 'Square Lighting Poles',
     wattage: '45W, 90W',
     image: "./products/rnipl-508.png",
     description: 'Energy-efficient LED street lighting designed for optimal visibility and safety on roadways and pathways.',
@@ -1388,6 +1412,84 @@ export const PRODUCTS: Product[] = [
       }
     ],
     document: "./document/RNIPL-5039.pdf",
+  },
+   {
+    id: '50',
+    name: 'Elisa Inverted',
+    subCategory: 'Outdoor',
+    category: 'Decorative Bracket',
+    wattage: '100W',
+    image: "./products/rnipl-1176.png",
+    description: 'Energy-efficient LED street lighting designed for optimal visibility and safety on roadways and pathways.',
+    features: ['Aluminium frame', 'Thermal management fins', 'Stainless hardware', 'IK08 impact resistant', 'Auto restart after safe volatge mode', 'Compact and aesthestic design',],
+    enquiryEnabled: true,
+    specs: [
+      {
+        label: "Code",
+        value: "RNIPL-1176"
+      },
+      {
+        label: "Power",
+        value: "100 Watt"
+      },
+      {
+        label: "Warranty",
+        value: "2 Years"
+      }
+    ],
+    document: "./document/RNIPL-1176.pdf",
+  },
+   {
+    id: '51',
+    name: 'Vincent Inverted',
+    subCategory: 'Outdoor',
+    category: 'Decorative Bracket',
+    wattage: '100W',
+    image: "./products/rnipl-1175.jpg",
+    description: 'Energy-efficient LED street lighting designed for optimal visibility and safety on roadways and pathways.',
+    features: ['Aluminium frame', 'Thermal management fins', 'Stainless hardware', 'IK08 impact resistant', 'Auto restart after safe volatge mode', 'Compact and aesthestic design',],
+    enquiryEnabled: true,
+    specs: [
+      {
+        label: "Code",
+        value: "RNIPL-1175"
+      },
+      {
+        label: "Power",
+        value: "100 Watt"
+      },
+      {
+        label: "Warranty",
+        value: "2 Years"
+      }
+    ],
+    document: "./document/RNIPL-1176.pdf",
+  },
+   {
+    id: '52',
+    name: 'Carley Round',
+    subCategory: 'Outdoor',
+    category: 'Column Light',
+    wattage: '40W',
+    image: "./products/rnipl-005601.png",
+    description: 'Energy-efficient LED street lighting designed for optimal visibility and safety on roadways and pathways.',
+    features: ['Aluminium frame', 'Thermal management fins', 'Stainless hardware', 'IK08 impact resistant', 'Auto restart after safe volatge mode', 'Compact and aesthestic design',],
+    enquiryEnabled: true,
+    specs: [
+      {
+        label: "Code",
+        value: "RNIPL-005601"
+      },
+      {
+        label: "Power",
+        value: "40 Watt"
+      },
+      {
+        label: "Warranty",
+        value: "2 Years"
+      }
+    ],
+    document: "./document/RNIPL-005601.pdf",
   },
 ]
 
