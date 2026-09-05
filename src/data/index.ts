@@ -88,7 +88,7 @@ export const FeaturedProducts: featuredProduct[] = [
     title: "Stadium Light",
     subCategory: "Poles",
     category: "Stadium Lights",
-    onImage: "./products/stadium-light-on.jpg",
+    onImage: "./products/stadium-light-on1.jpg",
     offImage: "./products/stadium-light-off.jpg",
   },
   {
