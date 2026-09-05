@@ -79,7 +79,7 @@ export const FeaturedProducts: featuredProduct[] = [
     id: "8",
     title: "Street Light",
     subCategory: "Poles",
-    category: "Pole Lighting",
+    category: "Street Light Housing",
     onImage: "./products/rnipl-1100-on.jpg",
     offImage: "./products/rnipl-1100-off.jpg",
   },
