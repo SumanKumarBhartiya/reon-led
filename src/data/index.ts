@@ -29,27 +29,27 @@ export const FeaturedProducts: featuredProduct[] = [
   },
   {
     id: "2",
-    title: "Industrial High Bay",
-    subCategory: "Indoor",
-    category: "High Bay Light Housing",
-    onImage: "./products/rnipl-0231-on.jpg",
-    offImage: "./products/rnipl-0231-off.png",
-  },
-  {
-    id: "3",
-    title: "Sport Badminton",
-    subCategory: "Indoor",
-    category: "Indoor Sports Light Housing",
-    onImage: "./products/rnipl-6149-on.jpg",
-    offImage: "./products/rnipl-6149-off.jpg",
-  },
-  {
-    id: "4",
     title: "Square Panel Light",
     subCategory: "Indoor",
     category: "Panel Lights",
     onImage: "./products/panel-lights-on.jpg",
     offImage: "./products/panel-lights-off.jpg",
+  },
+  {
+    id: "3",
+    title: "Inspection Lamp",
+    subCategory: "Indoor",
+    category: "Inspection Lamp",
+    onImage: "./products/rnipl-610010-on.jpg",
+    offImage: "./products/rnipl-610010-off.jpg",
+  },
+  {
+    id: "4",
+    title: "Industrial High Bay",
+    subCategory: "Indoor",
+    category: "High Bay Light Housing",
+    onImage: "./products/rnipl-0231-on.jpg",
+    offImage: "./products/rnipl-0231-off.png",
   },
   {
     id: "5",
@@ -61,6 +61,14 @@ export const FeaturedProducts: featuredProduct[] = [
   },
   {
     id: "6",
+    title: "Sport Badminton",
+    subCategory: "Indoor",
+    category: "Indoor Sports Light Housing",
+    onImage: "./products/rnipl-6149-on.jpg",
+    offImage: "./products/rnipl-6149-off.jpg",
+  },
+  {
+    id: "7",
     title: "Garden Ring Pole",
     subCategory: "Outdoor",
     category: "Pole Lighting",
@@ -68,23 +76,7 @@ export const FeaturedProducts: featuredProduct[] = [
     offImage: "./products/pole-mounted-off.jpg",
   },
   {
-    id: "7",
-    title: "High Mast Pole",
-    subCategory: "Poles",
-    category: "Aluminium Lighting Poles",
-    onImage: "./products/rnipl-1170-on.jpg",
-    offImage: "./products/rnipl-1170-off.jpg",
-  },
-  {
     id: "8",
-    title: "Street Light",
-    subCategory: "Poles",
-    category: "Street Light Housing",
-    onImage: "./products/rnipl-1100-on.jpg",
-    offImage: "./products/rnipl-1100-off.jpg",
-  },
-  {
-    id: "9",
     title: "Stadium Light",
     subCategory: "Poles",
     category: "Stadium Lights",
@@ -92,7 +84,23 @@ export const FeaturedProducts: featuredProduct[] = [
     offImage: "./products/stadium-light-off.jpg",
   },
   {
+    id: "9",
+    title: "High Mast Pole",
+    subCategory: "Poles",
+    category: "Aluminium Lighting Poles",
+    onImage: "./products/rnipl-1170-on.jpg",
+    offImage: "./products/rnipl-1170-off.jpg",
+  },
+  {
     id: "10",
+    title: "Street Light",
+    subCategory: "Poles",
+    category: "Street Light Housing",
+    onImage: "./products/rnipl-1100-on.jpg",
+    offImage: "./products/rnipl-1100-off.jpg",
+  },
+  {
+    id: "11",
     title: "Column Light",
     subCategory: "Poles",
     category: "Column Light",
@@ -100,7 +108,7 @@ export const FeaturedProducts: featuredProduct[] = [
     offImage: "./products/column_light_off.jpg",
   },
   {
-    id: "11",
+    id: "12",
     title: "Decorative Bracket",
     subCategory: "Poles",
     category: "Decorative Bracket",
@@ -108,7 +116,7 @@ export const FeaturedProducts: featuredProduct[] = [
     offImage: "./products/decorative_bracket_off.jpg",
   },
   {
-    id: "9",
+    id: "13",
     title: "Square Lighting Poles",
     subCategory: "Poles",
     category: "Square Lighting Poles",
@@ -1413,7 +1421,7 @@ export const PRODUCTS: Product[] = [
     ],
     document: "./document/RNIPL-5039.pdf",
   },
-   {
+  {
     id: '50',
     name: 'Elisa Inverted',
     subCategory: 'Outdoor',
@@ -1439,7 +1447,7 @@ export const PRODUCTS: Product[] = [
     ],
     document: "./document/RNIPL-1176.pdf",
   },
-   {
+  {
     id: '51',
     name: 'Vincent Inverted',
     subCategory: 'Outdoor',
@@ -1465,7 +1473,7 @@ export const PRODUCTS: Product[] = [
     ],
     document: "./document/RNIPL-1176.pdf",
   },
-   {
+  {
     id: '52',
     name: 'Carley Round',
     subCategory: 'Outdoor',
