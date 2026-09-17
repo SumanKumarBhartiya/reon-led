@@ -5,6 +5,7 @@ import { COMPANY } from '../types'
 import { SectionHeader, Button } from '../components/ui'
 import ProductCardHomePage from '../components/ui/ProductCardHomePage'
 import EnquiryForm from '../components/ui/EnquiryForm'
+import ImageGallery from '../components/ImageGallery'
 
 export default function HomePage() {
   const featuredProducts = FeaturedProducts
@@ -22,7 +23,6 @@ export default function HomePage() {
         />
         {/* Gold accent bar */}
         <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-gradient-to-b from-brand-gold via-brand-gold-light to-transparent" />
-
         <div className="max-w-7xl mx-auto px-4 py-20 grid lg:grid-cols-2 gap-16 items-center relative z-10">
           {/* Text */}
           <div className="animate-fade-up">
@@ -52,15 +52,17 @@ export default function HomePage() {
           </div>
 
           {/* Hero visual */}
-          <div className="hidden lg:flex justify-center items-center">
-            <div className="relative w-80 h-80">
-              {/* Glowing ring */}
+          <div className="lg:flex justify-center items-center">
+            {/* <div className="relative w-80 h-80">
+             
               <div className="absolute inset-0 rounded-full border-2 border-brand-gold/30 animate-ping" style={{ animationDuration: '3s' }} />
               <div className="absolute inset-4 rounded-full border border-brand-gold/20" />
               <div className="absolute inset-0 flex items-center justify-center">
                 <img src="led.png" alt="Reon LED" className="rounded w-40 h-40 object-contain animate-float" />
               </div>
-            </div>
+            </div> */}
+            <ImageGallery />
+
           </div>
         </div>
 
